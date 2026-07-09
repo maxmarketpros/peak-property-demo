@@ -6,12 +6,12 @@
   "domain": "",
   "googleProfile": "https://g.co/kgs/HsWckAh",
   "footerServices": [
-    { "label": "Panel Upgrades", "href": "/services.html" },
-    { "label": "EV Charger Install", "href": "/services.html" },
-    { "label": "Electrical Repairs", "href": "/services.html" },
-    { "label": "Lighting Installation", "href": "/services.html" },
-    { "label": "Generator Install", "href": "/services.html" },
-    { "label": "Safety Inspections", "href": "/services.html" },
+    { "label": "Panel Upgrades", "href": "/services/panel-upgrades.html" },
+    { "label": "EV Charger Install", "href": "/services/ev-charger-installation.html" },
+    { "label": "Electrical Repairs", "href": "/services/electrical-repairs.html" },
+    { "label": "24/7 Emergency", "href": "/services/emergency-electrician.html" },
+    { "label": "Generator Install", "href": "/services/generator-installation.html" },
+    { "label": "Safety Inspections", "href": "/services/electrical-safety-inspections.html" },
     { "label": "All Services →", "href": "/services.html" }
   ],
   "footerAreas": [

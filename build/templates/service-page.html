@@ -1,0 +1,75 @@
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="breadcrumb"><a href="/index.html">Home</a> &rsaquo; <a href="/services.html">Services</a> &rsaquo; {{SVC_NAME}}</div>
+  <div class="page-hero-label">{{SVC_CAT_LABEL}}</div>
+  <h1 class="page-hero-title">{{SVC_H1}}</h1>
+  <p class="page-hero-sub">{{SVC_HERO_SUB}}</p>
+</section>
+
+<section class="section" style="background:var(--white)">
+  <div class="svc-layout">
+    <div class="svc-content">
+      <div class="svc-hero-img">
+        <img src="{{SVC_IMG}}" alt="{{SVC_IMG_ALT}}" width="{{SVC_IMG_W}}" height="{{SVC_IMG_H}}">
+      </div>
+      {{SVC_INTRO}}
+
+      <h2>{{SVC_SYMPTOMS_HEAD}}</h2>
+      <ul>
+{{SVC_SYMPTOMS_LIS}}
+      </ul>
+
+      <h2>What's Included</h2>
+      <ul>
+{{SVC_INCLUDED_LIS}}
+      </ul>
+
+      <div class="safety-callout">
+        <h3><span class="bolt">&#9889;</span> While We're There: The Free Panel Check</h3>
+        <p>Every service call includes a quick look at your panel and visible wiring — no charge, no pressure. Most of the hazards we find (Federal Pacific breakers, double-tapped circuits, overheated connections) turn up during a small job like this one. If we see something, we'll show you a photo of it and explain your options. Learn more about our <a href="/services/electrical-safety-inspections.html">safety inspections</a> and <a href="/services/panel-upgrades.html">panel upgrades</a>.</p>
+      </div>
+
+      <h2>How We Work</h2>
+      {{SVC_PROCESS_NOTE}}
+      <ul>
+        <li><strong>1. Free estimate &amp; safety check</strong> — we look at the job, give your panel a free once-over, and quote upfront pricing.</li>
+        <li><strong>2. Straightforward plan</strong> — scope, materials, timeline, and cost in plain English before we start.</li>
+        <li><strong>3. Professional execution</strong> — licensed electricians, clean work, everything to code.</li>
+        <li><strong>4. Final walkthrough</strong> — we test everything, clean up, and walk you through what we did.</li>
+      </ul>
+
+      <h2>{{SVC_COST_HEAD}}</h2>
+      {{SVC_COST_PARAS}}
+
+      {{SVC_QUOTE_HTML}}
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-wrap" style="margin-top:20px">
+{{SVC_FAQS_HTML}}
+      </div>
+    </div>
+
+    <aside class="svc-side">
+      <div class="side-card call-card">
+        <h3>Talk to an Electrician</h3>
+        <p>Family-owned &middot; Licensed &amp; Insured (Lic. #{{LICENSE}}) &middot; Free estimates &middot; 24/7 emergency service</p>
+        <a href="tel:7739877677" class="btn-gold" style="width:100%;justify-content:center">&#9742; {{PHONE}}</a>
+        <a href="#quote" class="btn-wht" style="width:100%;justify-content:center;margin-top:10px">Get a Free Quote &rarr;</a>
+      </div>
+      <div class="side-card">
+        <h3>Related Services</h3>
+        <ul>
+{{SVC_RELATED_LIS}}
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>Areas We Serve</h3>
+        <ul>
+{{SVC_AREAS_LIS}}
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+{{>quote-section.html}}

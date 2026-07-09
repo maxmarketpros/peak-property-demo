@@ -37,10 +37,11 @@ nav{background:var(--white);border-bottom:2px solid var(--border);padding:0 60px
 .nav-cta-btn:hover{background:#d4911a!important;color:var(--white)!important}
 
 /* NAV DROPDOWNS (desktop hover/focus; mobile accordion) */
-.has-drop{position:relative;display:flex;align-items:center}
+.has-drop{display:flex;align-items:center}
 .drop-toggle{background:none;border:none;cursor:pointer;font-size:11px;color:var(--muted);padding:8px 6px 8px 0;font-family:'Montserrat',sans-serif}
-.drop-panel{position:absolute;top:100%;left:0;background:var(--white);border:1px solid var(--border);border-top:3px solid var(--gold);border-radius:0 0 10px 10px;box-shadow:0 18px 44px rgba(0,0,0,.14);padding:22px 26px;display:flex;gap:34px;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .18s,transform .18s,visibility .18s;z-index:210}
-.has-drop:hover .drop-panel,.has-drop:focus-within .drop-panel{opacity:1;visibility:visible;transform:translateY(0)}
+/* mega-menu: anchored to the sticky <nav>, centered, so it can never overflow the viewport */
+.drop-panel{position:absolute;top:100%;left:50%;background:var(--white);border:1px solid var(--border);border-top:3px solid var(--gold);border-radius:0 0 10px 10px;box-shadow:0 18px 44px rgba(0,0,0,.14);padding:22px 26px;display:flex;flex-wrap:wrap;gap:34px;width:max-content;max-width:min(920px,calc(100vw - 24px));opacity:0;visibility:hidden;transform:translateX(-50%) translateY(8px);transition:opacity .18s,transform .18s,visibility .18s;z-index:210}
+.has-drop:hover .drop-panel,.has-drop:focus-within .drop-panel{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
 .drop-col{min-width:172px}
 .drop-col-wide{min-width:210px}
 .drop-head{display:block;font-family:'Montserrat',sans-serif;font-weight:800;font-size:11px;text-transform:uppercase;letter-spacing:2px;color:var(--muted);margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--border)}
