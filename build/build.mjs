@@ -54,7 +54,6 @@ function galleryCards() {
             <img src="${g.src}" alt="${g.alt}" width="${g.w}" height="${g.h}" loading="lazy" decoding="async">
             <div class="work-overlay"><span class="work-cat">${g.cat}</span></div>
           </div>
-          <div class="work-label">${g.label}</div>
         </div>`).join('\n');
 }
 
