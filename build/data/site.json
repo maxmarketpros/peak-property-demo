@@ -1,0 +1,26 @@
+{
+  "phone": "(773) 987-7677",
+  "email": "peakpropertyelectric@gmail.com",
+  "license": "SE8133",
+  "tagline": "Commercial | Residential | Industrial",
+  "domain": "",
+  "googleProfile": "https://g.co/kgs/HsWckAh",
+  "footerServices": [
+    { "label": "Panel Upgrades", "href": "/services.html" },
+    { "label": "EV Charger Install", "href": "/services.html" },
+    { "label": "Electrical Repairs", "href": "/services.html" },
+    { "label": "Lighting Installation", "href": "/services.html" },
+    { "label": "Generator Install", "href": "/services.html" },
+    { "label": "Safety Inspections", "href": "/services.html" },
+    { "label": "All Services →", "href": "/services.html" }
+  ],
+  "footerAreas": [
+    { "label": "Skokie, IL", "href": "/areas.html" },
+    { "label": "Evanston, IL", "href": "/areas.html" },
+    { "label": "Lincolnwood, IL", "href": "/areas.html" },
+    { "label": "Wilmette, IL", "href": "/areas.html" },
+    { "label": "Glenview, IL", "href": "/areas.html" },
+    { "label": "Northbrook, IL", "href": "/areas.html" },
+    { "label": "All Service Areas →", "href": "/areas.html" }
+  ]
+}

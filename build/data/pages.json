@@ -1,0 +1,35 @@
+[
+  {
+    "out": "index.html",
+    "content": "index.html",
+    "title": "Electrician in Skokie, IL | Peak Property Electric LLC",
+    "desc": "Family-owned Skokie electricians — panel upgrades, EV chargers, lighting & 24/7 emergency service across the North Shore. Licensed (SE8133). (773) 987-7677.",
+    "extraBody": "<script src=\"https://link.msgsndr.com/js/form_embed.js\"></script>"
+  },
+  {
+    "out": "services.html",
+    "content": "services.html",
+    "title": "Electrical Services in Skokie, IL | Peak Property Electric",
+    "desc": "Panel upgrades, EV chargers, lighting, generators, safety inspections & 24/7 emergency service from a family-owned Skokie electrician. Free estimates."
+  },
+  {
+    "out": "our-work.html",
+    "content": "our-work.html",
+    "title": "Our Work — Electrical Project Gallery | Peak Property Electric",
+    "desc": "Real photos from real Peak Property Electric jobs: kitchens, panels, EV chargers, new construction and commercial projects across Skokie & the North Shore."
+  },
+  {
+    "out": "reviews.html",
+    "content": "reviews.html",
+    "title": "Reviews — 5.0★ Skokie Electrician | Peak Property Electric",
+    "desc": "Read 50+ five-star Google reviews for Peak Property Electric LLC, a family-owned electrician serving Skokie, Cook County, and the North Shore."
+  },
+  {
+    "out": "areas.html",
+    "content": "areas.html",
+    "title": "Service Areas — Skokie & North Shore | Peak Property Electric",
+    "desc": "Peak Property Electric serves Skokie, Evanston, Lincolnwood, Wilmette, Glenview, Northbrook, Winnetka, and North Shore communities across Cook County.",
+    "extraHead": "<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\">",
+    "extraBody": "<script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n<script>\ndocument.querySelectorAll('.area-map[data-lat]').forEach(function (el) {\n  var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);\n  var m = L.map(el, { center: [lat, lng], zoom: 13, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, attributionControl: false });\n  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(m);\n  L.marker([lat, lng], { icon: L.divIcon({ className: '', html: \"<div style='width:16px;height:16px;background:#111;border:3px solid #E8A020;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.4)'></div>\", iconSize: [16, 16], iconAnchor: [8, 8] }) }).addTo(m);\n});\n</script>"
+  }
+]
