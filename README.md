@@ -6,8 +6,11 @@ there is **no CI build step**.
 
 **Pretty URLs:** all internal links, canonicals, OG tags, JSON-LD, and the
 sitemap use extensionless URLs (`/services/panel-upgrades`, not `.html`).
-Netlify serves `/page` from `page.html` by default; enable **Pretty URLs**
-on the Netlify project so `/page.html` also 301-redirects to `/page`.
+Netlify serves `/page` from `page.html` by default, and the generated
+`_redirects` file 301s every `/page.html` path to its pretty form (no
+Netlify setting needed). `_redirects` also maps all 21 URLs from the old
+Webflow site (e.g. `/electrician-in-evanston-il`) to their new pages —
+that legacy list lives in `build/data/redirects.json`.
 
 ## How the site is built
 

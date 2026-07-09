@@ -1,0 +1,23 @@
+[
+  { "from": "/electrical-panel-upgrades-skokie-il", "to": "/services/panel-upgrades" },
+  { "from": "/electrical-safety-inspections-skokie-il", "to": "/services/electrical-safety-inspections" },
+  { "from": "/commercial-electrical-services-skokie-il", "to": "/services/commercial-electrical" },
+  { "from": "/ev-charger-installation-skokie-il", "to": "/services/ev-charger-installation" },
+  { "from": "/generator-installation-maintenance-skokie-il", "to": "/services/generator-installation" },
+  { "from": "/emergency-electrician-skokie-il", "to": "/services/emergency-electrician" },
+  { "from": "/residential-electrical-services-skokie-il", "to": "/services" },
+  { "from": "/smart-home-automation-skokie-il", "to": "/services" },
+  { "from": "/electrician-skokie-il", "to": "/areas/skokie-electrician" },
+  { "from": "/electrician-near-me-skokie-il-60076", "to": "/areas/skokie-electrician" },
+  { "from": "/electrician-in-evanston-il", "to": "/areas/evanston-electrician" },
+  { "from": "/electrician-in-wilmette-il", "to": "/areas/wilmette-electrician" },
+  { "from": "/electrician-in-northbrook-il", "to": "/areas/northbrook-electrician" },
+  { "from": "/electrician-in-glenview-il", "to": "/areas/glenview-electrician" },
+  { "from": "/electrician-in-winnetka-il", "to": "/areas/winnetka-electrician" },
+  { "from": "/electrician-in-glencoe-il", "to": "/areas/glencoe-electrician" },
+  { "from": "/electrician-in-highland-park-il", "to": "/areas/highland-park-electrician" },
+  { "from": "/electrician-in-deerfield-il", "to": "/areas/deerfield-electrician" },
+  { "from": "/electrician-in-kenilworth-il", "to": "/areas/kenilworth-electrician" },
+  { "from": "/electrician-in-northfield-il", "to": "/areas/northfield-electrician" },
+  { "from": "/electrician-in-riverwoods-il", "to": "/areas/riverwoods-electrician" }
+]

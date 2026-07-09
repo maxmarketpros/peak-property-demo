@@ -94,6 +94,7 @@ const jsonld = objs => objs.map(o => `<script type="application/ld+json">${JSON.
 // ---------- page assembly ----------
 const layout = readFileSync(T('layout.html'), 'utf8');
 const sitemapPaths = [];
+const renderedOuts = [];
 
 // Netlify serves pretty URLs: /page.html is reachable at /page (no trailing
 // slash), so all canonical/OG/sitemap/schema URLs use the extensionless form.
@@ -104,6 +105,7 @@ const prettyPath = out => {
 
 function renderPage({ out, title, desc, content, extraHead = '', extraBody = '', schema = '', noindex = false }) {
   const canonicalPath = prettyPath(out);
+  renderedOuts.push(out);
   if (!noindex) sitemapPaths.push(canonicalPath);
   const og = site.domain && !noindex ? `
 <meta property="og:type" content="website">
@@ -214,5 +216,22 @@ ${sitemapPaths.map(p => `  <url><loc>${site.domain}${p}</loc><lastmod>${today}</
   writeFileSync(join(ROOT, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /build/\n\nSitemap: ${site.domain}/sitemap.xml\n`);
   console.log(`wrote sitemap.xml (${sitemapPaths.length} urls) + robots.txt`);
 }
+
+// _redirects: legacy old-site URLs + .html→pretty 301s (Netlify, first match wins).
+// The .html rules must be forced (301!) — the files exist, and Netlify never
+// applies an unforced redirect when the requested path matches a real file.
+const legacy = JSON.parse(readFileSync(D('redirects.json'), 'utf8'));
+const htmlRules = renderedOuts
+  .filter(o => o !== '404.html')
+  .map(o => `/${o.replace(/\\/g, '/')} ${prettyPath(o)} 301!`);
+writeFileSync(join(ROOT, '_redirects'), [
+  '# Legacy URLs from the old Webflow site (indexed in Google / external links)',
+  ...legacy.map(r => `${r.from} ${r.to} 301`),
+  '',
+  '# Pretty URLs: redirect the physical .html paths to the extensionless form',
+  ...htmlRules,
+  '',
+].join('\n'));
+console.log(`wrote _redirects (${legacy.length} legacy + ${htmlRules.length} pretty-url rules)`);
 
 console.log('build complete');
