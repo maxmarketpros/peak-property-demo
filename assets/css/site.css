@@ -278,8 +278,10 @@ nav{background:var(--white);border-bottom:2px solid var(--border);padding:0 60px
 .side-card h3{font-family:'Montserrat',sans-serif;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--dark);margin-bottom:14px}
 .side-card ul{list-style:none}
 .side-card li{margin-bottom:9px}
-.side-card a{font-size:14px;color:var(--text);font-weight:600}
-.side-card a:hover{color:var(--gold)}
+.side-card ul a{font-size:14px;color:var(--text);font-weight:600}
+.side-card ul a:hover{color:var(--gold)}
+.side-card.call-card .btn-wht{color:var(--white);border-color:rgba(255,255,255,.35)}
+.side-card.call-card .btn-wht:hover{color:var(--gold);border-color:var(--gold)}
 .side-card.call-card{background:var(--dark);border-color:var(--dark);text-align:center}
 .side-card.call-card h3{color:var(--gold)}
 .side-card.call-card p{color:#aaa;font-size:13px;margin-bottom:16px;line-height:1.6}
