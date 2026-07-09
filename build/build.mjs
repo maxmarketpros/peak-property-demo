@@ -117,9 +117,12 @@ function renderPage({ out, title, desc, content, extraHead = '', extraBody = '',
     CONTENT: content,
     GALLERY_CARDS: galleryCards(),
   };
-  // two passes so tokens inside CONTENT/partials resolve
+  // include partials + substitute twice: the first substitute inserts CONTENT,
+  // which may itself contain {{>partial}} refs and tokens
   let html = includePartials(layout, tokens);
-  html = substitute(substitute(html, tokens), tokens);
+  html = substitute(html, tokens);
+  html = includePartials(html, tokens);
+  html = substitute(html, tokens);
   const dest = join(ROOT, out);
   mkdirSync(dirname(dest), { recursive: true });
   writeFileSync(dest, html);
