@@ -95,21 +95,30 @@ const jsonld = objs => objs.map(o => `<script type="application/ld+json">${JSON.
 const layout = readFileSync(T('layout.html'), 'utf8');
 const sitemapPaths = [];
 
-function renderPage({ out, title, desc, content, extraHead = '', extraBody = '', schema = '' }) {
+// Netlify serves pretty URLs: /page.html is reachable at /page (no trailing
+// slash), so all canonical/OG/sitemap/schema URLs use the extensionless form.
+const prettyPath = out => {
   const path = '/' + out.replace(/\\/g, '/');
-  const canonicalPath = path === '/index.html' ? '/' : path;
-  sitemapPaths.push(canonicalPath);
-  const og = site.domain ? `
+  return path === '/index.html' ? '/' : path.replace(/\.html$/, '');
+};
+
+function renderPage({ out, title, desc, content, extraHead = '', extraBody = '', schema = '', noindex = false }) {
+  const canonicalPath = prettyPath(out);
+  if (!noindex) sitemapPaths.push(canonicalPath);
+  const og = site.domain && !noindex ? `
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Peak Property Electric LLC">
+<meta property="og:locale" content="en_US">
 <meta property="og:title" content="${title}">
 <meta property="og:description" content="${desc}">
 <meta property="og:url" content="${site.domain}${canonicalPath}">
-<meta property="og:image" content="${site.domain}/photos/brand/red-van-2.jpg">` : '';
+<meta property="og:image" content="${site.domain}/photos/brand/red-van-2.jpg">
+<meta name="twitter:card" content="summary_large_image">` : '';
   const tokens = {
     ...globalTokens,
     TITLE: title,
     META_DESC: desc,
-    CANONICAL: (site.domain ? `\n<link rel="canonical" href="${site.domain}${canonicalPath}">` : '') + og,
+    CANONICAL: (noindex ? '\n<meta name="robots" content="noindex">' : (site.domain ? `\n<link rel="canonical" href="${site.domain}${canonicalPath}">` : '')) + og,
     SCHEMA_JSONLD: schema,
     EXTRA_HEAD: extraHead,
     EXTRA_BODY: extraBody,
@@ -138,7 +147,7 @@ for (const page of pages) {
     content: readFileSync(C(page.content), 'utf8'),
     extraHead: page.extraHead || '',
     extraBody: page.extraBody || '',
-    schema: page.out === 'index.html' ? jsonld([businessSchema]) : jsonld([breadcrumbSchema([['Home', '/'], [page.title.split(/[—|–]/)[0].trim(), '/' + page.out]])]),
+    schema: page.out === 'index.html' ? jsonld([businessSchema]) : jsonld([breadcrumbSchema([['Home', '/'], [page.title.split(/[—|–]/)[0].trim(), prettyPath(page.out)]])]),
   });
 }
 
@@ -153,8 +162,8 @@ if (existsSync(D('services.json')) && existsSync(T('service-page.html'))) {
       desc: svc.desc,
       content: substitute(tpl, { ...globalTokens, ...svc.tokens }),
       schema: jsonld([
-        { '@context': 'https://schema.org', '@type': 'Service', serviceType: svc.name, provider: { '@id': BUSINESS_ID }, areaServed: (svc.areas || TOWNS).map(t => ({ '@type': 'City', name: `${t}, IL` })), url: `${site.domain}/services/${svc.slug}.html` },
-        breadcrumbSchema([['Home', '/'], ['Services', '/services.html'], [svc.name, `/services/${svc.slug}.html`]]),
+        { '@context': 'https://schema.org', '@type': 'Service', serviceType: svc.name, provider: { '@id': BUSINESS_ID }, areaServed: (svc.areas || TOWNS).map(t => ({ '@type': 'City', name: `${t}, IL` })), url: `${site.domain}/services/${svc.slug}` },
+        breadcrumbSchema([['Home', '/'], ['Services', '/services'], [svc.name, `/services/${svc.slug}`]]),
         ...(svc.faqs ? [faqSchema(svc.faqs)] : []),
       ]),
     });
@@ -172,8 +181,8 @@ if (existsSync(D('areas.json')) && existsSync(T('area-page.html'))) {
       desc: area.desc,
       content: substitute(tpl, { ...globalTokens, ...area.tokens }),
       schema: jsonld([
-        { '@context': 'https://schema.org', '@type': 'Service', serviceType: 'Electrician', provider: { '@id': BUSINESS_ID }, areaServed: { '@type': 'City', name: `${area.town}, IL` }, url: `${site.domain}/areas/${area.slug}.html` },
-        breadcrumbSchema([['Home', '/'], ['Service Areas', '/areas.html'], [area.town, `/areas/${area.slug}.html`]]),
+        { '@context': 'https://schema.org', '@type': 'Service', serviceType: 'Electrician', provider: { '@id': BUSINESS_ID }, areaServed: { '@type': 'City', name: `${area.town}, IL` }, url: `${site.domain}/areas/${area.slug}` },
+        breadcrumbSchema([['Home', '/'], ['Service Areas', '/areas'], [area.town, `/areas/${area.slug}`]]),
         ...(area.faqs ? [faqSchema(area.faqs)] : []),
       ]),
       extraHead: area.extraHead || '',
@@ -189,8 +198,8 @@ if (existsSync(C('404.html'))) {
     title: 'Page Not Found | Peak Property Electric',
     desc: 'That page could not be found. Browse Peak Property Electric services and service areas, or call (773) 987-7677.',
     content: readFileSync(C('404.html'), 'utf8'),
+    noindex: true,
   });
-  sitemapPaths.pop();
 }
 
 // sitemap.xml + robots.txt

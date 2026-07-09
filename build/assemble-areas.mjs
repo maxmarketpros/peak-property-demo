@@ -80,15 +80,15 @@ const pages = drafts.map(({ slug, town, picks, copy }) => {
       AREA_PROBLEMS_HEAD: copy.problems_heading,
       AREA_PROBLEMS_LIS: copy.problems.map(p => `        <li>${p}</li>`).join('\n'),
       AREA_SERVICES_INTRO: copy.services_intro,
-      AREA_SERVICE_PICKS: picks.map((p, i) => `        <li><a href="/services/${p}.html"><strong>${SVC_NAMES[p]}</strong></a> — ${copy.service_blurbs[i] || ''}</li>`).join('\n'),
+      AREA_SERVICE_PICKS: picks.map((p, i) => `        <li><a href="/services/${p}"><strong>${SVC_NAMES[p]}</strong></a> — ${copy.service_blurbs[i] || ''}</li>`).join('\n'),
       AREA_QUOTE_HTML: quoteHtml,
       AREA_FAQS_HTML: copy.faqs.map(f => `        <div class="faq-item">
           <button class="faq-q">${f.q} <span class="faq-icon">+</span></button>
           <div class="faq-a">${f.a}</div>
         </div>`).join('\n'),
       AREA_DRIVE_NOTE: copy.drive_note,
-      AREA_SIDE_SERVICES: picks.map(p => `          <li><a href="/services/${p}.html">${SVC_NAMES[p]}</a></li>`).join('\n'),
-      AREA_NEARBY: m.nearby.map(n => `          <li><a href="/areas/${n}-electrician.html">${townName(n)}, IL</a></li>`).join('\n') + `\n          <li><a href="/areas.html" style="color:var(--gold);font-weight:700">All Service Areas &rarr;</a></li>`,
+      AREA_SIDE_SERVICES: picks.map(p => `          <li><a href="/services/${p}">${SVC_NAMES[p]}</a></li>`).join('\n'),
+      AREA_NEARBY: m.nearby.map(n => `          <li><a href="/areas/${n}-electrician">${townName(n)}, IL</a></li>`).join('\n') + `\n          <li><a href="/areas" style="color:var(--gold);font-weight:700">All Service Areas &rarr;</a></li>`,
     },
   };
 });

@@ -6,21 +6,21 @@
   "domain": "https://peakpropertyelectric.com",
   "googleProfile": "https://g.co/kgs/HsWckAh",
   "footerServices": [
-    { "label": "Panel Upgrades", "href": "/services/panel-upgrades.html" },
-    { "label": "EV Charger Install", "href": "/services/ev-charger-installation.html" },
-    { "label": "Electrical Repairs", "href": "/services/electrical-repairs.html" },
-    { "label": "24/7 Emergency", "href": "/services/emergency-electrician.html" },
-    { "label": "Generator Install", "href": "/services/generator-installation.html" },
-    { "label": "Safety Inspections", "href": "/services/electrical-safety-inspections.html" },
-    { "label": "All Services →", "href": "/services.html" }
+    { "label": "Panel Upgrades", "href": "/services/panel-upgrades" },
+    { "label": "EV Charger Install", "href": "/services/ev-charger-installation" },
+    { "label": "Electrical Repairs", "href": "/services/electrical-repairs" },
+    { "label": "24/7 Emergency", "href": "/services/emergency-electrician" },
+    { "label": "Generator Install", "href": "/services/generator-installation" },
+    { "label": "Safety Inspections", "href": "/services/electrical-safety-inspections" },
+    { "label": "All Services →", "href": "/services" }
   ],
   "footerAreas": [
-    { "label": "Skokie, IL", "href": "/areas/skokie-electrician.html" },
-    { "label": "Evanston, IL", "href": "/areas/evanston-electrician.html" },
-    { "label": "Lincolnwood, IL", "href": "/areas/lincolnwood-electrician.html" },
-    { "label": "Wilmette, IL", "href": "/areas/wilmette-electrician.html" },
-    { "label": "Glenview, IL", "href": "/areas/glenview-electrician.html" },
-    { "label": "Northbrook, IL", "href": "/areas/northbrook-electrician.html" },
-    { "label": "All Service Areas →", "href": "/areas.html" }
+    { "label": "Skokie, IL", "href": "/areas/skokie-electrician" },
+    { "label": "Evanston, IL", "href": "/areas/evanston-electrician" },
+    { "label": "Lincolnwood, IL", "href": "/areas/lincolnwood-electrician" },
+    { "label": "Wilmette, IL", "href": "/areas/wilmette-electrician" },
+    { "label": "Glenview, IL", "href": "/areas/glenview-electrician" },
+    { "label": "Northbrook, IL", "href": "/areas/northbrook-electrician" },
+    { "label": "All Service Areas →", "href": "/areas" }
   ]
 }

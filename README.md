@@ -4,6 +4,11 @@ Static site for Peak Property Electric LLC (Skokie, IL), hosted on Netlify
 (project `peakpropertyelectric`). Netlify serves the committed HTML as-is —
 there is **no CI build step**.
 
+**Pretty URLs:** all internal links, canonicals, OG tags, JSON-LD, and the
+sitemap use extensionless URLs (`/services/panel-upgrades`, not `.html`).
+Netlify serves `/page` from `page.html` by default; enable **Pretty URLs**
+on the Netlify project so `/page.html` also 301-redirects to `/page`.
+
 ## How the site is built
 
 The deployable pages (`*.html` in the repo root, `services/`, `areas/`,
@@ -51,9 +56,11 @@ and commit both the `build/` changes and the regenerated pages.
 
 ## Local preview
 
-`start-site.bat` (port 8000) or the `.claude/launch.json` server (port 8011):
-`python -m http.server 8011 --bind 127.0.0.1`. Internal URLs are root-relative,
-so pages must be viewed over HTTP, not file://.
+`start-site.bat` (port 8000) or `node build/serve.mjs 8011` — a tiny static
+server that resolves pretty URLs the way Netlify does (`/page` → `page.html`,
+unknown paths → `404.html`). Plain `python -m http.server` no longer works
+because internal links have no `.html` extension. Internal URLs are
+root-relative, so pages must be viewed over HTTP, not file://.
 
 ## Parked / waiting on the client
 
