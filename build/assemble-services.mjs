@@ -106,7 +106,7 @@ const pages = drafts.map(({ slug, copy }) => {
       SVC_QUOTE_HTML: quoteHtml,
       SVC_FAQS_HTML: faqsHtml,
       SVC_RELATED_LIS: relatedOf(slug).map(s => `          <li><a href="/services/${s}.html">${NAMES[s]}</a></li>`).join('\n'),
-      SVC_AREAS_LIS: m.areas.map(t => `          <li><a href="/areas.html">${t}, IL</a></li>`).join('\n') + `\n          <li><a href="/areas.html" style="color:var(--gold);font-weight:700">All Service Areas &rarr;</a></li>`,
+      SVC_AREAS_LIS: m.areas.map(t => `          <li><a href="/areas/${t.toLowerCase().replace(/ /g, '-')}-electrician.html">${t}, IL</a></li>`).join('\n') + `\n          <li><a href="/areas.html" style="color:var(--gold);font-weight:700">All Service Areas &rarr;</a></li>`,
     },
   };
 });

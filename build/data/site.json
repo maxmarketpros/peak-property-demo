@@ -15,12 +15,12 @@
     { "label": "All Services →", "href": "/services.html" }
   ],
   "footerAreas": [
-    { "label": "Skokie, IL", "href": "/areas.html" },
-    { "label": "Evanston, IL", "href": "/areas.html" },
-    { "label": "Lincolnwood, IL", "href": "/areas.html" },
-    { "label": "Wilmette, IL", "href": "/areas.html" },
-    { "label": "Glenview, IL", "href": "/areas.html" },
-    { "label": "Northbrook, IL", "href": "/areas.html" },
+    { "label": "Skokie, IL", "href": "/areas/skokie-electrician.html" },
+    { "label": "Evanston, IL", "href": "/areas/evanston-electrician.html" },
+    { "label": "Lincolnwood, IL", "href": "/areas/lincolnwood-electrician.html" },
+    { "label": "Wilmette, IL", "href": "/areas/wilmette-electrician.html" },
+    { "label": "Glenview, IL", "href": "/areas/glenview-electrician.html" },
+    { "label": "Northbrook, IL", "href": "/areas/northbrook-electrician.html" },
     { "label": "All Service Areas →", "href": "/areas.html" }
   ]
 }

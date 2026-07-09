@@ -1,0 +1,67 @@
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="breadcrumb"><a href="/index.html">Home</a> &rsaquo; <a href="/areas.html">Service Areas</a> &rsaquo; {{AREA_TOWN}}</div>
+  <div class="page-hero-label">Serving {{AREA_TOWN}}, Illinois</div>
+  <h1 class="page-hero-title">{{AREA_H1}}</h1>
+  <p class="page-hero-sub">{{AREA_HERO_SUB}}</p>
+</section>
+
+<section class="section" style="background:var(--white)">
+  <div class="svc-layout">
+    <div class="svc-content">
+      <div class="svc-hero-img area-map" data-lat="{{AREA_LAT}}" data-lng="{{AREA_LNG}}" style="height:320px;background:var(--light)"></div>
+
+      <h2>Electrical Work in {{AREA_TOWN}} Homes</h2>
+      {{AREA_HOMES_INTRO}}
+
+      <h2>{{AREA_PROBLEMS_HEAD}}</h2>
+      <ul>
+{{AREA_PROBLEMS_LIS}}
+      </ul>
+
+      <h2>Our Most-Requested Services in {{AREA_TOWN}}</h2>
+      {{AREA_SERVICES_INTRO}}
+      <ul>
+{{AREA_SERVICE_PICKS}}
+      </ul>
+
+      <div class="safety-callout">
+        <h3><span class="bolt">&#9889;</span> The Free Panel Check — On Every {{AREA_TOWN}} Call</h3>
+        <p>Whatever we come out for, your panel and visible wiring get a free once-over. If we spot something unsafe, we show you a photo and explain your options — no charge, no pressure. Learn more about our <a href="/services/electrical-safety-inspections.html">safety inspections</a>.</p>
+      </div>
+
+      {{AREA_QUOTE_HTML}}
+
+      <h2>{{AREA_TOWN}} Electrician FAQs</h2>
+      <div class="faq-wrap" style="margin-top:20px">
+{{AREA_FAQS_HTML}}
+      </div>
+
+      <h2>Serving {{AREA_TOWN}} from Our Skokie Shop</h2>
+      {{AREA_DRIVE_NOTE}}
+    </div>
+
+    <aside class="svc-side">
+      <div class="side-card call-card">
+        <h3>Your {{AREA_TOWN}} Electrician</h3>
+        <p>Family-owned &middot; Licensed &amp; Insured (Lic. #{{LICENSE}}) &middot; Free estimates &middot; 24/7 emergency service</p>
+        <a href="tel:7739877677" class="btn-gold" style="width:100%;justify-content:center">&#9742; {{PHONE}}</a>
+        <a href="#quote" class="btn-wht" style="width:100%;justify-content:center;margin-top:10px">Get a Free Quote &rarr;</a>
+      </div>
+      <div class="side-card">
+        <h3>Popular in {{AREA_TOWN}}</h3>
+        <ul>
+{{AREA_SIDE_SERVICES}}
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>Nearby Areas</h3>
+        <ul>
+{{AREA_NEARBY}}
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+{{>quote-section.html}}
