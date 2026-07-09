@@ -66,6 +66,8 @@ const pages = drafts.map(({ slug, town, picks, copy }) => {
     slug: `${slug}-electrician`,
     title: m.title,
     desc: copy.meta_desc,
+    town: town,
+    faqs: copy.faqs,
     extraHead: LEAFLET_HEAD,
     extraBody: LEAFLET_BODY,
     tokens: {

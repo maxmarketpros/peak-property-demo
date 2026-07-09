@@ -4,6 +4,36 @@
    "slug": "panel-upgrades",
    "title": "Electrical Panel Upgrades in Skokie | Peak Property Electric",
    "desc": "Old Federal Pacific panel or fuse box? Family-owned, licensed Skokie electricians upgrade panels across the North Shore. Free estimates: (773) 987-7677.",
+   "name": "Panel Upgrades & Replacements",
+   "areas": [
+    "Skokie",
+    "Lincolnwood",
+    "Northbrook",
+    "Deerfield",
+    "Evanston"
+   ],
+   "faqs": [
+    {
+     "q": "Is my Federal Pacific panel really dangerous?",
+     "a": "Federal Pacific breakers have a documented history of failing to trip when they should, which is a fire risk. Many insurers and home inspectors flag them on sight. We've replaced a lot of them around the North Shore, including swapping one out for a new Siemens panel. If you're not sure what you have, send us a photo or have us look during any service call. The once-over is free."
+    },
+    {
+     "q": "Do I need 200 amps, or is 100 enough?",
+     "a": "For a small home with gas appliances, 100 amps can still work. But if you're adding an EV charger, central air, or remodeling a kitchen, 200 amps is usually the right call. We size it to how you actually live, and we've done upgrades all the way to 400 amps when the house needed it."
+    },
+    {
+     "q": "Will I lose power during the upgrade?",
+     "a": "Yes, for part of the day while we swap the panel and the utility work gets done. Most panel replacements are finished the same day, and we walk you through the new panel before we leave."
+    },
+    {
+     "q": "Do you pull permits for panel work?",
+     "a": "Always. Panel and service upgrades need a permit and a village inspection in Skokie, Evanston, and the surrounding towns. We handle the paperwork and meet the inspector so you don't have to."
+    },
+    {
+     "q": "My insurance company sent a letter about my panel. Now what?",
+     "a": "This happens a lot with Federal Pacific, Zinsco, and fuse boxes. Call us, and we'll inspect the panel, give you a free written quote, and once the new panel passes inspection you'll have the documentation your insurer wants."
+    }
+   ],
    "tokens": {
     "SVC_NAME": "Panel Upgrades & Replacements",
     "SVC_H1": "Panel Upgrades in Skokie & the North Shore",
@@ -30,6 +60,40 @@
    "slug": "electrical-repairs",
    "title": "Electrical Repairs in Skokie, IL | Peak Property Electric",
    "desc": "Tripping breakers, dead outlets, flickering lights? Family-owned Skokie electricians who find the real cause first. Call (773) 987-7677.",
+   "name": "Electrical Repairs & Troubleshooting",
+   "areas": [
+    "Skokie",
+    "Evanston",
+    "Lincolnwood",
+    "Wilmette",
+    "Glenview"
+   ],
+   "faqs": [
+    {
+     "q": "My breaker keeps tripping. Can't I just replace it with a bigger one?",
+     "a": "Please don't. A breaker trips to protect the wiring behind it. Putting in a bigger breaker on wiring that can't handle it is how fires start. We find out why it's tripping, then fix that."
+    },
+    {
+     "q": "Is a buzzing panel actually dangerous?",
+     "a": "It can be. Buzzing often means a loose connection or a failing breaker, and both get worse over time. We've diagnosed buzzing panels for neighbors here in Skokie. It's worth a look sooner rather than later."
+    },
+    {
+     "q": "One outlet died but the breaker didn't trip. What gives?",
+     "a": "Usually a loose connection somewhere upstream, or a tripped GFCI hiding in a bathroom or garage. We trace the circuit and find the break instead of guessing."
+    },
+    {
+     "q": "Do you charge just to come look?",
+     "a": "Estimates are free. You'll get a written quote before we do any work, and you're never obligated to move forward."
+    },
+    {
+     "q": "I smell something burning near an outlet. Should I wait for a normal appointment?",
+     "a": "No. Shut off that circuit at the breaker and call us at (773) 987-7677. We answer 24/7 for exactly this kind of thing."
+    },
+    {
+     "q": "My house has a Federal Pacific panel. Does that change the repair?",
+     "a": "Sometimes. Those panels have a known history of breakers failing to trip, and we replace a lot of them in this area. If yours is the root of the problem, we'll show you photos and lay out your options. No scare tactics, just what we found."
+    }
+   ],
    "tokens": {
     "SVC_NAME": "Electrical Repairs & Troubleshooting",
     "SVC_H1": "Electrical Repairs in Skokie & the North Shore",
@@ -56,6 +120,36 @@
    "slug": "emergency-electrician",
    "title": "24/7 Emergency Electrician – Skokie & North Shore, IL",
    "desc": "Burning smell? Sparking panel? Peak Property Electric answers 24/7 in Skokie and the North Shore. Licensed, family-owned. Call (773) 987-7677.",
+   "name": "24/7 Emergency Electrician",
+   "areas": [
+    "Skokie",
+    "Evanston",
+    "Northbrook",
+    "Highland Park",
+    "Glenview"
+   ],
+   "faqs": [
+    {
+     "q": "What counts as a real electrical emergency?",
+     "a": "Anything burning, sparking, buzzing, or hot. A downed line. Whole-house power loss when the neighbors still have lights. Water in the panel. If you're not sure, call anyway. We'll tell you straight if it can safely wait until morning, and you'll save the night rate."
+    },
+    {
+     "q": "What can usually wait until morning?",
+     "a": "One dead outlet, a breaker that resets and holds, a flickering fixture on one circuit. Annoying, not dangerous. Book a regular daytime visit and keep your money."
+    },
+    {
+     "q": "How fast can you actually get here?",
+     "a": "Within 30 to 45 minutes in most of our service area, from Skokie and Evanston up through Highland Park. We're based in Skokie, so we're not driving in from across the city."
+    },
+    {
+     "q": "What should I do while I wait for you?",
+     "a": "If you can reach the panel safely, shut off the main breaker. Never go near a downed line, even if it looks dead, and keep kids and pets inside. If you see flames, call 911 first, then us."
+    },
+    {
+     "q": "My panel is buzzing but nothing has tripped. Is that an emergency?",
+     "a": "Yes. Buzzing usually means a loose connection or a failing breaker arcing inside, and arcing starts fires. We've diagnosed exactly this for neighbors of yours. Shut off the main if you can and call us."
+    }
+   ],
    "tokens": {
     "SVC_NAME": "24/7 Emergency Electrician",
     "SVC_H1": "24/7 Emergency Electrician — Skokie & the North Shore",
@@ -82,6 +176,36 @@
    "slug": "dedicated-circuits",
    "title": "Dedicated Circuits in Skokie, IL | Peak Property Electric",
    "desc": "Breaker trips when the heater or microwave runs? We install dedicated circuits in Skokie and the North Shore. Family-owned, licensed. (773) 987-7677.",
+   "name": "Dedicated Circuits",
+   "areas": [
+    "Skokie",
+    "Wilmette",
+    "Deerfield",
+    "Northfield",
+    "Lincolnwood"
+   ],
+   "faqs": [
+    {
+     "q": "Which appliances actually need a dedicated circuit?",
+     "a": "Anything that pulls serious power or that you can't afford to lose. Sump pumps, refrigerators, microwaves, dishwashers, space heaters, window AC units, garage tools, and medical equipment are the big ones. Most appliance manufacturers spell it out in the manual."
+    },
+    {
+     "q": "Why does my breaker trip when I run the space heater?",
+     "a": "A space heater can pull 12 to 15 amps by itself, which is most of a standard circuit. Add a TV or a few lights on the same line and the breaker does its job and shuts things down. A dedicated circuit gives the heater its own lane."
+    },
+    {
+     "q": "Can my panel handle another circuit?",
+     "a": "Usually yes, but we check first. Every visit starts with a free look at your panel. If it's full, outdated, or one of the old Federal Pacific units common in North Shore homes, we'll show you photos and walk you through options before running anything new."
+    },
+    {
+     "q": "How long does it take to add a dedicated circuit?",
+     "a": "Most are done in one visit, often a few hours. Longer runs through finished walls take more time, and we'll tell you up front if yours will."
+    },
+    {
+     "q": "Is a tripping breaker actually dangerous?",
+     "a": "The trip itself is the breaker protecting you. The concern is what's behind it: a circuit running near its limit gets warm, and repeated overloads wear on wiring and connections. If it trips regularly, it's worth a look."
+    }
+   ],
    "tokens": {
     "SVC_NAME": "Dedicated Circuits",
     "SVC_H1": "Dedicated Circuits in Skokie & the North Shore",
@@ -108,6 +232,40 @@
    "slug": "wiring-rewiring",
    "title": "Home Wiring & Rewiring in Skokie | Peak Property Electric",
    "desc": "Old knob-and-tube or aluminum wiring? Family-owned, licensed Skokie electricians rewire North Shore homes without wrecking plaster. Call (773) 987-7677.",
+   "name": "Wiring & Rewiring",
+   "areas": [
+    "Evanston",
+    "Wilmette",
+    "Kenilworth",
+    "Winnetka",
+    "Skokie"
+   ],
+   "faqs": [
+    {
+     "q": "Do I have to rewire the whole house at once?",
+     "a": "No. A lot of homeowners do it in stages. We tackle the riskiest circuits first, then plan the rest around your budget. The written quote breaks it out so you can decide."
+    },
+    {
+     "q": "Will you tear up my plaster walls?",
+     "a": "Not if we can help it. We fish new wire through finished walls and ceilings using small access openings, not open trenches. If a spot truly needs a bigger opening, we tell you exactly where before we cut anything."
+    },
+    {
+     "q": "My insurance company will not renew because of knob-and-tube. Can you help?",
+     "a": "Yes, we hear this a lot in Skokie and Evanston's older homes. We replace the knob-and-tube and give you documentation of the work for your insurer."
+    },
+    {
+     "q": "Is aluminum wiring actually dangerous?",
+     "a": "Aluminum branch wiring from the 60s and 70s loosens at connections over time, and loose connections make heat. Fixes range from approved connector repairs to full replacement. We photograph what we find and walk you through both options."
+    },
+    {
+     "q": "How long does a rewire take?",
+     "a": "It depends on the size of the house and how accessible the walls are. Small jobs move fast, and a full rewire of an old two-story takes longer. Your written quote includes a timeline, and we keep power running to as much of the house as we can while we work."
+    },
+    {
+     "q": "Does rewiring include a new panel?",
+     "a": "Not automatically, but they often make sense together, especially with an old fuse box or a Federal Pacific panel. We check your panel for free on every visit either way, so you will know where it stands."
+    }
+   ],
    "tokens": {
     "SVC_NAME": "Wiring & Rewiring",
     "SVC_H1": "Wiring & Rewiring in Skokie & the North Shore",
@@ -134,6 +292,36 @@
    "slug": "outlets-switches",
    "title": "Outlets & Switches in Skokie, IL | Peak Property Electric",
    "desc": "Dead outlet? Loose switch? Family-owned, licensed electricians fixing outlets, GFCIs and dimmers in Skokie and the North Shore. Call (773) 987-7677.",
+   "name": "Outlets & Switches",
+   "areas": [
+    "Skokie",
+    "Lincolnwood",
+    "Evanston",
+    "Northfield",
+    "Glenview"
+   ],
+   "faqs": [
+    {
+     "q": "Will you really come out just to fix one outlet?",
+     "a": "Yes. Small jobs are welcome, and honestly they're how a lot of our regular customers first met us. One dead outlet today often turns into a customer who calls us for everything later."
+    },
+    {
+     "q": "My house still has two-prong outlets. Do I have to rewire everything?",
+     "a": "Usually not. Depending on what's behind the wall, we can add grounding to key circuits or use GFCI protection where code allows it. We'll look at your specific wiring and give you honest options, from a single outlet to a whole room."
+    },
+    {
+     "q": "Why does my GFCI keep tripping?",
+     "a": "Sometimes it's doing its job and catching a real fault, like moisture in an exterior box or a failing appliance. Sometimes the GFCI itself has worn out. We test the circuit to find out which, instead of just resetting it and hoping."
+    },
+    {
+     "q": "Is a warm outlet actually dangerous?",
+     "a": "Treat it seriously. Heat at an outlet usually means a loose connection, and loose connections are a common cause of house fires. Unplug whatever is in it and give us a call. This is one we'll move fast on."
+    },
+    {
+     "q": "Can you put a dimmer on my LED lights?",
+     "a": "Yes, but the dimmer has to match the bulbs or you get flicker and hum. We install LED-compatible dimmers and test them with your actual fixtures before we leave."
+    }
+   ],
    "tokens": {
     "SVC_NAME": "Outlets & Switches",
     "SVC_H1": "Outlets & Switches in Skokie & the North Shore",
@@ -160,6 +348,36 @@
    "slug": "indoor-lighting",
    "title": "Indoor Lighting in Skokie, IL | Peak Property Electric",
    "desc": "Pendants, chandeliers, under-cabinet and vanity lighting in Skokie and the North Shore. Family-owned, licensed electricians. Call (773) 987-7677.",
+   "name": "Indoor Lighting",
+   "areas": [
+    "Skokie",
+    "Glencoe",
+    "Winnetka",
+    "Wilmette",
+    "Evanston"
+   ],
+   "faqs": [
+    {
+     "q": "Do you supply the light fixtures, or do I buy my own?",
+     "a": "Either way works. Most homeowners pick out their own fixtures, and we install them. If you'd rather have help choosing, tell us what you're going for and we'll point you toward options that fit the space and the budget."
+    },
+    {
+     "q": "Can you hang a heavy chandelier or a fixture over a stairwell?",
+     "a": "Yes. We brace the box properly for the weight and bring the right equipment for tall spaces. That's exactly the kind of install you don't want done from a wobbly ladder on a standard box."
+    },
+    {
+     "q": "Can you add under-cabinet lighting without tearing up my kitchen?",
+     "a": "Usually, yes. We can often fish wiring through existing walls and cabinets with minimal patching. We'll tell you before we start exactly what, if anything, will need touch-up."
+    },
+    {
+     "q": "My room only has a light. Can you put a ceiling fan there?",
+     "a": "Most of the time. The existing box usually isn't rated for a fan, so we swap in a fan-rated brace and can add a separate switch for the fan and light if the wiring allows."
+    },
+    {
+     "q": "My house is older. Is the wiring safe for new lighting?",
+     "a": "That's common in Skokie and the North Shore, and it's why we check. On every job we look over your panel and visible wiring for free. If something needs attention, we show you photos and explain your options. No pressure."
+    }
+   ],
    "tokens": {
     "SVC_NAME": "Indoor Lighting",
     "SVC_H1": "Indoor Lighting in Skokie & the North Shore",
@@ -186,6 +404,36 @@
    "slug": "outdoor-lighting",
    "title": "Outdoor Lighting in Skokie, IL | Peak Property Electric",
    "desc": "Motion lights, landscape lighting, and porch fixtures done right by a family-owned, licensed Skokie electrician. Free estimates. Call (773) 987-7677.",
+   "name": "Outdoor Lighting",
+   "areas": [
+    "Glencoe",
+    "Winnetka",
+    "Highland Park",
+    "Riverwoods",
+    "Lincolnwood"
+   ],
+   "faqs": [
+    {
+     "q": "Can you add an outdoor outlet just for holiday lights?",
+     "a": "Yes, and it's one of our favorite small jobs. We install a weatherproof GFCI outlet where you actually need it, and we can put it on a switch or timer inside so you're not plugging things in during a snowstorm."
+    },
+    {
+     "q": "Why does my outdoor outlet trip when it rains?",
+     "a": "Usually water is getting into the outlet, the cover, or the wiring behind it. The GFCI is doing its job by shutting things down. We find where the water gets in and fix it properly instead of just resetting the breaker."
+    },
+    {
+     "q": "Do motion lights need new wiring?",
+     "a": "Not always. If there's already a fixture in the right spot, we can often swap in a motion light directly. If the coverage is wrong, we'll tell you what it takes to put one where it actually helps."
+    },
+    {
+     "q": "Is landscape lighting a big electrical project?",
+     "a": "Most of it runs on low voltage, so it's less invasive than people expect. The transformer needs a proper outdoor outlet, and the wire needs to be buried correctly. Done right, it holds up for years."
+    },
+    {
+     "q": "Will my older panel handle new outdoor circuits?",
+     "a": "That's exactly what our free panel once-over answers. Many homes around here still have old fuse boxes or Federal Pacific panels, and we check yours on every visit and show you photos if anything looks unsafe."
+    }
+   ],
    "tokens": {
     "SVC_NAME": "Outdoor Lighting",
     "SVC_H1": "Outdoor Lighting in Skokie & the North Shore",
@@ -212,6 +460,36 @@
    "slug": "recessed-led-lighting",
    "title": "Recessed & LED Lighting in Skokie | Peak Property Electric",
    "desc": "Recessed and LED lighting installed clean in Skokie and the North Shore. Family-owned, licensed electricians. Free estimates. Call (773) 987-7677.",
+   "name": "Recessed & LED Lighting",
+   "areas": [
+    "Skokie",
+    "Evanston",
+    "Glenview",
+    "Deerfield",
+    "Northbrook"
+   ],
+   "faqs": [
+    {
+     "q": "Can you install recessed lighting in a finished ceiling without wrecking it?",
+     "a": "Yes. That is most of what we do. We locate the joists first, cut clean round holes sized to the fixture, and fish the wire through the ceiling. No open trenches of drywall, no patch job for your painter. Canless LED wafers make this even easier because they need very little clearance above."
+    },
+    {
+     "q": "What is the difference between can and canless lights?",
+     "a": "A can light has a metal housing that sits up in the ceiling. Canless (wafer) lights are thin LED discs with a small junction box, so they fit where cans will not, like shallow ceilings under a bathroom or attic insulation. For most retrofits we recommend canless. We will tell you straight which one fits your ceiling."
+    },
+    {
+     "q": "What color temperature should I pick?",
+     "a": "Warmer light (2700K) feels cozy and suits living rooms and bedrooms. Cooler light (3500K to 4000K) is crisper and works well in kitchens and basements. Many of the fixtures we install are selectable, so you can flip a switch on the fixture and change it later. We will show you the options side by side before we commit."
+    },
+    {
+     "q": "How many lights does my room need?",
+     "a": "A rough rule is one light per 4 to 6 feet of ceiling, but it depends on ceiling height, wall color, and what you do in the room. We lay out the pattern on your ceiling with you before we cut a single hole, so you see exactly where every light lands."
+    },
+    {
+     "q": "Can you put my new lights on a dimmer?",
+     "a": "Yes, and you should. LED-rated dimmers let you take a kitchen from bright work light to dinner light with one slide. We only install dimmers matched to the fixtures, which prevents the flicker and buzz cheap pairings cause."
+    }
+   ],
    "tokens": {
     "SVC_NAME": "Recessed & LED Lighting",
     "SVC_H1": "Recessed & LED Lighting in Skokie & the North Shore",
@@ -238,6 +516,36 @@
    "slug": "electrical-safety-inspections",
    "title": "Electrical Safety Inspections | Skokie, IL Electrician",
    "desc": "Whole-home electrical safety inspections in Skokie & the North Shore. Family-owned, licensed, photos of every finding. Call (773) 987-7677.",
+   "name": "Electrical Safety Inspections",
+   "areas": [
+    "Skokie",
+    "Evanston",
+    "Wilmette",
+    "Kenilworth",
+    "Lincolnwood"
+   ],
+   "faqs": [
+    {
+     "q": "How is this different from a home inspector's report?",
+     "a": "Home inspectors cover the whole house and only note what's visible. We're licensed electricians (IL #SE8133). We open the panel, test circuits, and can tell you exactly what a repair would involve."
+    },
+    {
+     "q": "What's the deal with Federal Pacific panels?",
+     "a": "They were installed all over this area for decades, and their breakers have a documented history of failing to trip. We replace a lot of them. If you have one, we'll show you the label and lay out your options. No pressure to decide on the spot."
+    },
+    {
+     "q": "Will you try to sell me repairs afterward?",
+     "a": "No. You get photos and a written list. Some findings are urgent, most aren't, and we tell you which is which. What you do with the list is up to you."
+    },
+    {
+     "q": "How long does an inspection take?",
+     "a": "Usually one to two hours for a typical single-family home. Bigger houses or ones with multiple panels take longer."
+    },
+    {
+     "q": "Should I get one before closing on a house?",
+     "a": "That's the most common time people call us. Your inspection window is the right moment to learn whether you're facing a small fix or a full panel replacement."
+    }
+   ],
    "tokens": {
     "SVC_NAME": "Electrical Safety Inspections",
     "SVC_H1": "Electrical Safety Inspections in Skokie & the North Shore",
@@ -264,6 +572,40 @@
    "slug": "surge-protection",
    "title": "Whole-Home Surge Protection | Skokie, IL Electrician",
    "desc": "One bad surge can cost you every electronic in the house. Whole-home surge protection installed at the panel by a family-owned Skokie crew. (773) 987-7677",
+   "name": "Whole-Home Surge Protection",
+   "areas": [
+    "Riverwoods",
+    "Northbrook",
+    "Highland Park",
+    "Glenview",
+    "Skokie"
+   ],
+   "faqs": [
+    {
+     "q": "Aren't my power strips enough?",
+     "a": "No. A strip only protects what's plugged into it, and its protection wears out silently over time. It also does nothing for your furnace, AC, oven, or EV charger, since those never touch a strip. A panel-mounted protector stops the surge at the front door. The best setup is both: the panel unit takes the big hit, strips mop up what's left at your computer and TV."
+    },
+    {
+     "q": "Will it stop a direct lightning strike?",
+     "a": "We'll give it to you straight: nothing guarantees protection from a direct strike on your house. That's rare, though. Whole-home protectors handle nearby strikes and utility grid surges, which cause the vast majority of damage we see."
+    },
+    {
+     "q": "How long does the install take?",
+     "a": "It's a quick job at the panel. We shut power off briefly, mount the unit, wire it to a breaker, and test it. You won't lose your day to it."
+    },
+    {
+     "q": "Do surge protectors wear out?",
+     "a": "Yes. They sacrifice themselves to protect your home, a little with each hit. That's why every unit we install has status lights, and why we show you how to read them. After a major storm, glance at the panel. If the light says it's done its job and gone, call us."
+    },
+    {
+     "q": "Can you put one on my old Federal Pacific panel or fuse box?",
+     "a": "Often we can, but we may tell you not to. Federal Pacific panels have known breaker problems, and protecting the circuits downstream of a panel that can't be trusted is backwards. We replace a lot of them around Skokie and Evanston. We'll show you photos of what we find and let you decide."
+    },
+    {
+     "q": "Does it cover my Tesla or EV charger?",
+     "a": "Yes. Anything fed from your panel is covered, and an EV charger is one of the best reasons to add protection, since its electronics are expensive to replace. We install EV chargers too, so we can handle both in one visit."
+    }
+   ],
    "tokens": {
     "SVC_NAME": "Whole-Home Surge Protection",
     "SVC_H1": "Whole-Home Surge Protection in Skokie & the North Shore",
@@ -290,6 +632,36 @@
    "slug": "smoke-co-detectors",
    "title": "Smoke & CO Detector Installation | Skokie Electrician",
    "desc": "Hardwired smoke & CO detector installation in Skokie and the North Shore. Family-owned, licensed electricians. Free estimates. Call (773) 987-7677.",
+   "name": "Smoke & CO Detectors",
+   "areas": [
+    "Skokie",
+    "Lincolnwood",
+    "Evanston",
+    "Northfield",
+    "Deerfield"
+   ],
+   "faqs": [
+    {
+     "q": "What does the Illinois smoke detector law require now?",
+     "a": "If your home relies on battery-powered smoke detectors, Illinois now requires 10-year sealed-battery units when they're replaced. Homes with hardwired detectors need to keep them hardwired. We'll tell you plainly which rule applies to your house and what it takes to comply."
+    },
+    {
+     "q": "Where do smoke and CO detectors actually belong?",
+     "a": "Smoke detectors go in every bedroom, in the hallway outside sleeping areas, and on every level including the basement. Illinois requires a CO detector within 15 feet of every sleeping room in homes with gas appliances or an attached garage. We map it out room by room during the estimate."
+    },
+    {
+     "q": "Why do interconnected alarms matter?",
+     "a": "When alarms are wired together, smoke in the basement sets off the alarm in your bedroom too. In a two- or three-story house, that head start matters. If your home was built before interconnection was standard, we can wire it in."
+    },
+    {
+     "q": "My detector chirps even with a fresh battery. What gives?",
+     "a": "Usually the unit itself has reached end of life, and the chirp is its way of retiring. Sometimes it's a loose connection or a wiring issue on hardwired units. Either way, it's a quick diagnosis for us and an easy fix."
+    },
+    {
+     "q": "Can you add a hardwired detector where there's no wiring at all?",
+     "a": "Yes. Running new detector wiring through finished walls and ceilings is routine work for us, and we do it cleanly. That's most of what separates an electrician's install from a hardware-store swap."
+    }
+   ],
    "tokens": {
     "SVC_NAME": "Smoke & CO Detectors",
     "SVC_H1": "Smoke & CO Detector Installation in Skokie & the North Shore",
@@ -316,6 +688,36 @@
    "slug": "ev-charger-installation",
    "title": "EV Charger Installation in Skokie | Peak Property Electric",
    "desc": "Level 2 EV charger installation in Skokie and the North Shore. Tesla and universal chargers, panel checks, permits. Family-owned, licensed. (773) 987-7677.",
+   "name": "EV Charger Installation",
+   "areas": [
+    "Glenview",
+    "Wilmette",
+    "Evanston",
+    "Deerfield",
+    "Skokie"
+   ],
+   "faqs": [
+    {
+     "q": "Can you install a Tesla Wall Connector?",
+     "a": "Yes. We've installed Tesla Wall Connectors for homeowners around the North Shore, plus universal J1772 chargers that work with any EV. Bring us the charger you want, or ask us which one fits your setup."
+    },
+    {
+     "q": "Will my panel handle a Level 2 charger?",
+     "a": "Sometimes yes, sometimes no. We run a load calculation on every install. If your panel is maxed out, or it's an old fuse box or Federal Pacific unit, we'll show you photos and walk you through the options first."
+    },
+    {
+     "q": "Can the charger go outside?",
+     "a": "Yes. We mount chargers on exterior walls with weatherproof hardware. That's the right call if you park in the driveway or your garage is detached."
+    },
+    {
+     "q": "Do I need a permit for an EV charger?",
+     "a": "Most villages around here require a permit and an inspection for a new dedicated circuit. We pull the permit and handle the inspection as part of the job."
+    },
+    {
+     "q": "How long does the install take?",
+     "a": "Most straightforward installs are done in a day. If the wire run is long or the panel needs an upgrade first, we'll say so up front in the written quote."
+    }
+   ],
    "tokens": {
     "SVC_NAME": "EV Charger Installation",
     "SVC_H1": "EV Charger Installation in Skokie & the North Shore",
@@ -342,6 +744,36 @@
    "slug": "generator-installation",
    "title": "Generator Installation in Skokie | Peak Property Electric",
    "desc": "Whole-home standby generator installation and maintenance in Skokie and the North Shore. Licensed, family-owned, free estimates. Call (773) 987-7677.",
+   "name": "Generator Installation & Maintenance",
+   "areas": [
+    "Riverwoods",
+    "Winnetka",
+    "Highland Park",
+    "Northbrook",
+    "Glencoe"
+   ],
+   "faqs": [
+    {
+     "q": "How big a generator does my house need?",
+     "a": "It depends on what you want running during an outage. We do a load calculation on your actual house, then talk through whole-home backup versus covering just the essentials like heat, the sump pump, and the kitchen."
+    },
+    {
+     "q": "What does the automatic transfer switch actually do?",
+     "a": "It watches utility power. When power fails, it disconnects your house from the grid and starts the generator on its own. That keeps your home running and keeps power from backfeeding into the lines, which protects utility workers."
+    },
+    {
+     "q": "Is a portable generator setup a cheaper option?",
+     "a": "Yes. We install an outdoor inlet and an interlock on your panel so you can safely feed the house from a portable generator. You start it by hand, but it costs far less than a standby unit and beats extension cords through a window."
+    },
+    {
+     "q": "Do standby generators need regular maintenance?",
+     "a": "They do. The unit runs a short self-test on its own, but it still needs a yearly hands-on check: oil, battery, a test under real load, and a look at the transfer switch. We offer annual maintenance visits so it starts when it matters."
+    },
+    {
+     "q": "Will my gas line and meter handle a generator?",
+     "a": "Not always as-is. Some homes need a larger meter or a new line run. We check that during the free estimate and coordinate the gas work with the electrical, so it's one job, not three."
+    }
+   ],
    "tokens": {
     "SVC_NAME": "Generator Installation & Maintenance",
     "SVC_H1": "Generator Installation in Skokie & the North Shore",
@@ -368,6 +800,36 @@
    "slug": "new-construction-wiring",
    "title": "New Construction Wiring in Skokie | Peak Property Electric",
    "desc": "New construction wiring in Skokie and the North Shore. Family-owned, licensed crew handles plans to final inspection. Free estimates: (773) 987-7677.",
+   "name": "New Construction Wiring",
+   "areas": [
+    "Glenview",
+    "Winnetka",
+    "Glencoe",
+    "Skokie",
+    "Highland Park"
+   ],
+   "faqs": [
+    {
+     "q": "Do you work directly with general contractors?",
+     "a": "Yes, most new-construction jobs run through a GC and we are used to that rhythm. We hit the rough-in window, keep the inspector in the loop, and come back for trim-out when the drywall crew is done."
+    },
+    {
+     "q": "How long does electrical rough-in take?",
+     "a": "It depends on the size of the job, but we move fast without cutting corners. A recent basement rough-in was done in one day. For a full house we will give you a real timeline up front so your schedule holds."
+    },
+    {
+     "q": "Can you handle the permit and inspection?",
+     "a": "Yes. We wire to code, coordinate with the local inspector, and are on site for inspections. Clean, labeled, code-compliant work is the fastest way through, and it is the only way we do it."
+    },
+    {
+     "q": "Should I add EV charger wiring during construction?",
+     "a": "If you ever plan to own an electric car, yes. Running the circuit while walls are open costs far less than retrofitting later. We install a lot of Tesla chargers, so we will size the service for it too."
+    },
+    {
+     "q": "You are a small family crew. Is a full house too big for you?",
+     "a": "No. The same crew wires commercial buildings and new construction for builders. Small means the people who quote your job are the ones who show up in uniform and do the work."
+    }
+   ],
    "tokens": {
     "SVC_NAME": "New Construction Wiring",
     "SVC_H1": "New Construction Wiring in Skokie & the North Shore",
@@ -394,6 +856,36 @@
    "slug": "commercial-electrical",
    "title": "Commercial Electrician in Skokie | Peak Property Electric",
    "desc": "Commercial electrician in Skokie, IL. Panel upgrades, tenant build-outs, lighting. Family-owned, licensed and insured. Free quotes: (773) 987-7677.",
+   "name": "Commercial Electrical Services",
+   "areas": [
+    "Skokie",
+    "Northbrook",
+    "Evanston",
+    "Highland Park",
+    "Lincolnwood"
+   ],
+   "faqs": [
+    {
+     "q": "Can you work around our business hours?",
+     "a": "Yes. We schedule a lot of commercial work early, late, or in phases so you can stay open. Tell us your hours and we'll build the plan around them."
+    },
+    {
+     "q": "Do you handle permits and inspections for commercial jobs?",
+     "a": "We do. We're licensed (IL #SE8133) and insured, and we pull the permits and meet the inspector so you don't have to chase paperwork."
+    },
+    {
+     "q": "How big a job can a small crew take on?",
+     "a": "Bigger than you'd think. We've done a 6,000 square foot office remodel and replaced 12 panels in one multifamily building. What you give up in headcount you get back in the same faces showing up every day."
+    },
+    {
+     "q": "We own a multifamily building. Can you work unit by unit?",
+     "a": "Yes. We coordinate access with your tenants, work one unit at a time, and keep power interruptions short and scheduled so nobody comes home to a dark apartment."
+    },
+    {
+     "q": "What if something fails in the middle of a workday?",
+     "a": "Call (773) 987-7677. We run 24/7 emergency service, and a dead panel or a down circuit in a working business gets moved to the front of the line."
+    }
+   ],
    "tokens": {
     "SVC_NAME": "Commercial Electrical Services",
     "SVC_H1": "Commercial Electrical in Skokie & the North Shore",

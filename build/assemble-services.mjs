@@ -87,6 +87,9 @@ const pages = drafts.map(({ slug, copy }) => {
     slug,
     title: m.title,
     desc: copy.meta_desc,
+    name: NAMES[slug],
+    areas: m.areas,
+    faqs: copy.faqs,
     tokens: {
       SVC_NAME: NAMES[slug],
       SVC_H1: m.h1,

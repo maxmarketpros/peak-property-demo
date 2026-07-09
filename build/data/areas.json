@@ -4,6 +4,25 @@
    "slug": "skokie-electrician",
    "title": "Skokie Electrical Services – Your Hometown Electricians",
    "desc": "Looking for an electrician in Skokie? Peak Property Electric is family-owned and based right here in town. 5.0 stars. Call (773) 987-7677 today.",
+   "town": "Skokie",
+   "faqs": [
+    {
+     "q": "How fast can you get to my house in Skokie?",
+     "a": "Faster than anyone driving in from somewhere else — our shop is in Skokie and the crew lives locally. For emergencies we answer 24/7 at (773) 987-7677, and for scheduled work we can usually get to you quickly since there's no real drive involved."
+    },
+    {
+     "q": "My Skokie house still has a fuse box or a Federal Pacific panel. Do I really need to replace it?",
+     "a": "Fuse boxes aren't automatically dangerous, but they limit capacity and many insurers dislike them. Federal Pacific panels are a different matter — their breakers have a documented history of failing to trip during a fault. We replace both all the time in Skokie, and we'll give you a straight answer and a free estimate before any work starts."
+    },
+    {
+     "q": "Do panel upgrades in Skokie need a permit?",
+     "a": "Yes — the Village of Skokie requires a permit and inspection for panel and service upgrades. We handle the permit paperwork and coordinate the inspection as part of the job, so you don't have to deal with the village yourself."
+    },
+    {
+     "q": "Can my older Skokie home handle an EV charger?",
+     "a": "Often yes, sometimes only after a service upgrade. Many homes here still have 100A service, which can be tight once you add a Level 2 charger. We assess your panel first — that check is free — and quote both the charger and any upgrade honestly."
+    }
+   ],
    "extraHead": "<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\">",
    "extraBody": "<script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n<script>\ndocument.querySelectorAll('.area-map[data-lat]').forEach(function (el) {\n  var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);\n  var m = L.map(el, { center: [lat, lng], zoom: 13, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, attributionControl: false });\n  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(m);\n  L.marker([lat, lng], { icon: L.divIcon({ className: '', html: \"<div style='width:16px;height:16px;background:#111;border:3px solid #E8A020;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.4)'></div>\", iconSize: [16, 16], iconAnchor: [8, 8] }) }).addTo(m);\n});\n</script>",
    "tokens": {
@@ -28,6 +47,25 @@
    "slug": "evanston-electrician",
    "title": "Electrician in Evanston, IL | Peak Property Electric",
    "desc": "Looking for an electrician in Evanston, IL? Family-owned, licensed & insured, 18+ years with older homes. Free estimates. Call (773) 987-7677.",
+   "town": "Evanston",
+   "faqs": [
+    {
+     "q": "Do you handle City of Evanston permits and inspections?",
+     "a": "Yes. Evanston runs its own permit and inspection process separate from surrounding towns, and we deal with it all the time. We pull the permit, do the work to code, and meet the city inspector so you don't have to manage any of it."
+    },
+    {
+     "q": "My insurer flagged knob-and-tube wiring. Do I have to tear open my plaster walls to fix it?",
+     "a": "Usually not. We rewire older Evanston homes by fishing new wire through existing walls and ceilings, which keeps original plaster and trim intact. Once the work passes inspection, you'll have the documentation your insurance carrier is asking for."
+    },
+    {
+     "q": "How quickly can you get to Evanston?",
+     "a": "Fast — our shop is in Skokie, directly on Evanston's western border, so you're about as close to us as a customer can get. We also answer <a href=\"tel:7739877677\">(773) 987-7677</a> 24/7 for genuine emergencies like burning smells, dead panels, or sparking outlets."
+    },
+    {
+     "q": "How much does it cost to rewire an older Evanston home?",
+     "a": "It depends on the size of the house and how much of the original wiring is still live, so we don't quote blind. Estimates are free — we'll walk the house, check the panel, and give you a real number and a plan, including whether the job can be staged in phases."
+    }
+   ],
    "extraHead": "<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\">",
    "extraBody": "<script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n<script>\ndocument.querySelectorAll('.area-map[data-lat]').forEach(function (el) {\n  var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);\n  var m = L.map(el, { center: [lat, lng], zoom: 13, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, attributionControl: false });\n  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(m);\n  L.marker([lat, lng], { icon: L.divIcon({ className: '', html: \"<div style='width:16px;height:16px;background:#111;border:3px solid #E8A020;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.4)'></div>\", iconSize: [16, 16], iconAnchor: [8, 8] }) }).addTo(m);\n});\n</script>",
    "tokens": {
@@ -52,6 +90,25 @@
    "slug": "glenview-electrician",
    "title": "Electrician in Glenview, IL | Peak Property Electric",
    "desc": "Looking for an electrician in Glenview? Peak Property Electric is family-owned, licensed, and 5-star rated. Free estimates — call (773) 987-7677.",
+   "town": "Glenview",
+   "faqs": [
+    {
+     "q": "Do I need a permit for electrical work in Glenview?",
+     "a": "For most significant work — panel upgrades, new circuits, EV chargers, generator hookups — yes, the Village of Glenview requires an electrical permit and an inspection. We handle the permit paperwork and meet the inspector ourselves, so the job is documented and done to code. That paper trail matters in Glenview, where houses change hands quickly and buyers' inspectors look for it."
+    },
+    {
+     "q": "My east Glenview ranch has a Federal Pacific panel. How urgent is that?",
+     "a": "We'd put it near the top of your list. Federal Pacific Stab-Lok breakers have a well-documented history of failing to trip during overloads and faults, which is a fire risk. We replace these panels regularly in Glenview's post-war neighborhoods, and in most cases it's a one-day job. Call <a href=\"tel:7739877677\">(773) 987-7677</a> and we'll take a look — the assessment is free."
+    },
+    {
+     "q": "Can my house handle an EV charger, or do I need a panel upgrade first?",
+     "a": "It depends on the house. Most homes in The Glen and other newer subdivisions have 200-amp service and can take a Level 2 charger with a load calculation and a new dedicated circuit. Older east Glenview homes on 100-amp service often need a panel or service upgrade first. We check your panel for free before quoting anything, so you're never guessing."
+    },
+    {
+     "q": "How fast can you get to Glenview?",
+     "a": "Our shop is in Skokie, a short hop up the Edens, so Glenview is squarely inside our everyday service area — not the far edge of it. For scheduled work we can usually get you on the calendar quickly, and for emergencies we answer <a href=\"tel:7739877677\">(773) 987-7677</a> 24/7."
+    }
+   ],
    "extraHead": "<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\">",
    "extraBody": "<script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n<script>\ndocument.querySelectorAll('.area-map[data-lat]').forEach(function (el) {\n  var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);\n  var m = L.map(el, { center: [lat, lng], zoom: 13, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, attributionControl: false });\n  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(m);\n  L.marker([lat, lng], { icon: L.divIcon({ className: '', html: \"<div style='width:16px;height:16px;background:#111;border:3px solid #E8A020;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.4)'></div>\", iconSize: [16, 16], iconAnchor: [8, 8] }) }).addTo(m);\n});\n</script>",
    "tokens": {
@@ -76,6 +133,25 @@
    "slug": "northbrook-electrician",
    "title": "Electrician in Northbrook, IL | Peak Property Electric",
    "desc": "Looking for an electrician in Northbrook? Peak Property Electric is family-owned, licensed, and 5.0-star rated on Google. Call (773) 987-7677.",
+   "town": "Northbrook",
+   "faqs": [
+    {
+     "q": "My Northbrook house still has its original panel from the 1960s. Does it really need replacing?",
+     "a": "If it's a Federal Pacific panel or a fuse box, yes — we recommend replacement rather than repair, because those panels have a documented habit of not tripping under fault conditions. If it's just an older 100-amp panel in good shape, it may be fine for now but too small for what you want to add next. Either way, we include a free panel-and-wiring once-over on every service call, so you'll get an honest read before anyone talks about a big job."
+    },
+    {
+     "q": "Do you handle the Village of Northbrook permits and inspections?",
+     "a": "Yes. Panel replacements, standby generators, EV chargers, and service upgrades all typically require an electrical permit in Northbrook. We pull the permit, do the work to code, and coordinate the village inspection — you don't have to manage any of it."
+    },
+    {
+     "q": "How fast can you actually get to Northbrook in an emergency?",
+     "a": "We answer 24/7, and we mean it — one of our Google reviewers reached out on a Sunday and had a callback within minutes. Northbrook is a straight run up the Edens from our Skokie shop, so emergency calls here are well inside our normal response area."
+    },
+    {
+     "q": "What size generator does a typical Northbrook home need?",
+     "a": "For most of the split-levels and ranches in town, a properly sized air-cooled standby unit covers the essentials — furnace, sump pump, fridge, lights — and many owners choose whole-house coverage. We do a load calculation first, then size the unit and transfer switch to your actual panel rather than guessing. Estimates are free."
+    }
+   ],
    "extraHead": "<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\">",
    "extraBody": "<script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n<script>\ndocument.querySelectorAll('.area-map[data-lat]').forEach(function (el) {\n  var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);\n  var m = L.map(el, { center: [lat, lng], zoom: 13, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, attributionControl: false });\n  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(m);\n  L.marker([lat, lng], { icon: L.divIcon({ className: '', html: \"<div style='width:16px;height:16px;background:#111;border:3px solid #E8A020;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.4)'></div>\", iconSize: [16, 16], iconAnchor: [8, 8] }) }).addTo(m);\n});\n</script>",
    "tokens": {
@@ -100,6 +176,25 @@
    "slug": "wilmette-electrician",
    "title": "Electrician in Wilmette, IL | Peak Property Electric",
    "desc": "Looking for an electrician in Wilmette? Peak Property Electric is family-owned, licensed & insured, and based next door in Skokie. Call (773) 987-7677.",
+   "town": "Wilmette",
+   "faqs": [
+    {
+     "q": "Do you pull permits for electrical work in Wilmette?",
+     "a": "Yes. The Village of Wilmette requires permits and inspections for most electrical work — panel changes, service upgrades, rewiring, EV chargers. We handle the permit paperwork and coordinate the inspection so the job is done right and on record, which matters when you sell the house."
+    },
+    {
+     "q": "Can you install an EV charger if my garage is detached and off the alley?",
+     "a": "Yes — that's one of the most common jobs we do in east Wilmette. It usually means running conduit from the house panel out to the garage, sometimes trenching and adding a small subpanel. We install all major brands, including Tesla, and give you a free estimate with the trenching and permit costs spelled out up front."
+    },
+    {
+     "q": "My Wilmette home still has knob-and-tube wiring. Do I need a full rewire right away?",
+     "a": "Not always. We'll assess what's actually live, what condition it's in, and whether your insurer requires it gone. Many homeowners rewire in phases — starting with kitchens, bedrooms, and anything under insulation — so it fits a budget instead of blowing one up."
+    },
+    {
+     "q": "How fast can you get to Wilmette for an emergency?",
+     "a": "Quickly — our shop is in Skokie, right across the border, and we run 24/7 emergency service. If you've lost power, smell something burning at the panel, or your sump pump circuit is dead in a storm, call <a href=\"tel:7739877677\">(773) 987-7677</a> any hour."
+    }
+   ],
    "extraHead": "<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\">",
    "extraBody": "<script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n<script>\ndocument.querySelectorAll('.area-map[data-lat]').forEach(function (el) {\n  var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);\n  var m = L.map(el, { center: [lat, lng], zoom: 13, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, attributionControl: false });\n  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(m);\n  L.marker([lat, lng], { icon: L.divIcon({ className: '', html: \"<div style='width:16px;height:16px;background:#111;border:3px solid #E8A020;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.4)'></div>\", iconSize: [16, 16], iconAnchor: [8, 8] }) }).addTo(m);\n});\n</script>",
    "tokens": {
@@ -124,6 +219,25 @@
    "slug": "winnetka-electrician",
    "title": "Electrician in Winnetka, IL | Peak Property Electric",
    "desc": "Looking for an electrician in Winnetka? Peak Property Electric is family-owned, licensed, and 5.0-star rated. Free estimates — call (773) 987-7677.",
+   "town": "Winnetka",
+   "faqs": [
+    {
+     "q": "Winnetka has its own electric utility — does that change how a service upgrade works?",
+     "a": "Yes, and it's the biggest thing to know. Winnetka runs its own municipal utility, Winnetka Water &amp; Electric, instead of ComEd. Service upgrades and meter work get scheduled and coordinated through the village. We've worked with municipal utilities before and we handle the permits and coordination ourselves — you don't have to manage any of it."
+    },
+    {
+     "q": "Can my 1920s Winnetka home handle an EV charger?",
+     "a": "Usually yes, but it depends on your existing service. Many older homes need a panel or service upgrade first, especially if you want a faster Level 2 charger — or two. We install EV chargers, including Tesla equipment, and we'll give you a straight answer on what your service can support before any work starts."
+    },
+    {
+     "q": "Do I have to rewire the whole house if it still has knob-and-tube?",
+     "a": "Not always all at once. We can assess what's actually live, what's already been replaced in past remodels, and prioritize the riskiest sections first. Some homeowners phase the work; others do it in one project alongside a renovation. Either way, we work carefully around original plaster and trim."
+    },
+    {
+     "q": "How quickly can you get to Winnetka for an emergency?",
+     "a": "We're based in Skokie, a short drive down the North Shore, and we answer emergency calls 24/7. If you've lost power to part of the house, smell something burning at the panel, or have a dead circuit you can't explain, call <a href=\"tel:7739877677\">(773) 987-7677</a> any hour."
+    }
+   ],
    "extraHead": "<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\">",
    "extraBody": "<script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n<script>\ndocument.querySelectorAll('.area-map[data-lat]').forEach(function (el) {\n  var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);\n  var m = L.map(el, { center: [lat, lng], zoom: 13, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, attributionControl: false });\n  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(m);\n  L.marker([lat, lng], { icon: L.divIcon({ className: '', html: \"<div style='width:16px;height:16px;background:#111;border:3px solid #E8A020;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.4)'></div>\", iconSize: [16, 16], iconAnchor: [8, 8] }) }).addTo(m);\n});\n</script>",
    "tokens": {
@@ -148,6 +262,25 @@
    "slug": "kenilworth-electrician",
    "title": "Electrician in Kenilworth, IL | Peak Property Electric",
    "desc": "Looking for an electrician in Kenilworth, IL? Family-owned Peak Property Electric rewires historic homes with care. Free estimates: (773) 987-7677.",
+   "town": "Kenilworth",
+   "faqs": [
+    {
+     "q": "Can you rewire a historic Kenilworth home without tearing up the plaster?",
+     "a": "In most cases, yes. We fish new wiring through existing wall and ceiling cavities and open plaster only where there's no alternative — and when we do, we cut small, neat access points that a plasterer can patch invisibly. We'll walk you through exactly where we'd need to open up before any work starts."
+    },
+    {
+     "q": "Do I need a permit for electrical work in Kenilworth?",
+     "a": "Most panel changes, service upgrades, and rewiring projects require a permit from the Village of Kenilworth. We handle the permit paperwork and inspections as part of the job, so you're not chasing it yourself."
+    },
+    {
+     "q": "My house still has a fuse box. Is that an emergency?",
+     "a": "Not necessarily an emergency, but it's worth an assessment. Fuse boxes and Federal Pacific panels are the two things we most often recommend replacing in homes of this era. Every service call includes a free panel-and-wiring once-over, so we can tell you honestly whether yours can wait."
+    },
+    {
+     "q": "You're based in Skokie — do you really take small Kenilworth jobs?",
+     "a": "Yes. We're a small crew on purpose, and a single bad outlet or flickering fixture gets the same scheduling priority as a full rewire. Kenilworth is a short, familiar drive for us, and for emergencies we answer 24/7 at (773) 987-7677."
+    }
+   ],
    "extraHead": "<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\">",
    "extraBody": "<script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n<script>\ndocument.querySelectorAll('.area-map[data-lat]').forEach(function (el) {\n  var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);\n  var m = L.map(el, { center: [lat, lng], zoom: 13, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, attributionControl: false });\n  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(m);\n  L.marker([lat, lng], { icon: L.divIcon({ className: '', html: \"<div style='width:16px;height:16px;background:#111;border:3px solid #E8A020;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.4)'></div>\", iconSize: [16, 16], iconAnchor: [8, 8] }) }).addTo(m);\n});\n</script>",
    "tokens": {
@@ -172,6 +305,25 @@
    "slug": "highland-park-electrician",
    "title": "Electrician in Highland Park, IL | Peak Property Electric",
    "desc": "Looking for an electrician in Highland Park, IL? Family-owned, licensed & insured, 18+ years, 24/7 emergency service. Free estimates: (773) 987-7677.",
+   "town": "Highland Park",
+   "faqs": [
+    {
+     "q": "How fast can you get to Highland Park for an emergency?",
+     "a": "We're based in Skokie, and it's a straight run up the Edens to Highland Park. We offer true 24/7 emergency service — call (773) 987-7677 any hour and you'll reach us, not an answering service. After a big storm, call volume goes up, so the earlier you call, the better."
+    },
+    {
+     "q": "Do I need a permit to replace my electrical panel in Highland Park?",
+     "a": "Yes — the City of Highland Park requires a permit for panel replacements and service upgrades. We handle the permit paperwork and the inspection as part of the job, so you don't have to chase anything down at City Hall."
+    },
+    {
+     "q": "My house near Ravinia is over 100 years old. Can you work on it?",
+     "a": "That's exactly the kind of home we work on most. We've spent 18+ years in the area's older housing stock — sorting out layered renovations, replacing fuse boxes, and rewiring where it's genuinely needed rather than as a default. Every visit starts with a free look at your panel and visible wiring."
+    },
+    {
+     "q": "What size generator do I need for a Highland Park home?",
+     "a": "It depends on what you want to keep running. Many homeowners cover the essentials — sump pump, furnace, fridge, some lights — while others want whole-house coverage. We'll do a free load calculation on your home and give you honest numbers for both options, plus what your current panel can support."
+    }
+   ],
    "extraHead": "<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\">",
    "extraBody": "<script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n<script>\ndocument.querySelectorAll('.area-map[data-lat]').forEach(function (el) {\n  var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);\n  var m = L.map(el, { center: [lat, lng], zoom: 13, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, attributionControl: false });\n  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(m);\n  L.marker([lat, lng], { icon: L.divIcon({ className: '', html: \"<div style='width:16px;height:16px;background:#111;border:3px solid #E8A020;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.4)'></div>\", iconSize: [16, 16], iconAnchor: [8, 8] }) }).addTo(m);\n});\n</script>",
    "tokens": {
@@ -196,6 +348,25 @@
    "slug": "deerfield-electrician",
    "title": "Electrician in Deerfield, IL | Peak Property Electric",
    "desc": "Looking for an electrician in Deerfield, IL? Peak Property Electric is family-owned, licensed, and 5.0-star rated. Free estimates — (773) 987-7677.",
+   "town": "Deerfield",
+   "faqs": [
+    {
+     "q": "Do I need a permit for a panel upgrade in Deerfield?",
+     "a": "Yes — the Village of Deerfield requires a permit and inspection for panel and service work, and utility coordination with ComEd when the service itself is upgraded. We handle the permit paperwork and schedule the inspection as part of the job, so you're not chasing any of it yourself."
+    },
+    {
+     "q": "How fast can you get to Deerfield for an emergency?",
+     "a": "We run 24/7 emergency service, and Deerfield is a straight shot up the Edens from our Skokie shop. If you've lost power to part of the house, smell something burning at the panel, or your sump pump circuit died mid-storm, call (773) 987-7677 any hour and you'll get a real person."
+    },
+    {
+     "q": "My house still has its original panel from the 1960s. Is that actually a problem?",
+     "a": "Sometimes yes, sometimes not yet — it depends on the brand, its condition, and what you're asking of it. Federal Pacific panels are worth replacing on principle because of their failure history. Others may be fine for now but too small for an EV charger or a finished basement. We do a free panel-and-wiring once-over on every service call, so you get a straight answer either way."
+    },
+    {
+     "q": "Can my Deerfield home handle an EV charger without a panel upgrade?",
+     "a": "Often, yes. A 200-amp service usually has room for a Level 2 charger; a 100-amp service is case by case, and we'll run the load calculation before recommending anything. If an upgrade is needed, we quote both pieces upfront with a free estimate — no surprises after the fact."
+    }
+   ],
    "extraHead": "<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\">",
    "extraBody": "<script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n<script>\ndocument.querySelectorAll('.area-map[data-lat]').forEach(function (el) {\n  var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);\n  var m = L.map(el, { center: [lat, lng], zoom: 13, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, attributionControl: false });\n  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(m);\n  L.marker([lat, lng], { icon: L.divIcon({ className: '', html: \"<div style='width:16px;height:16px;background:#111;border:3px solid #E8A020;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.4)'></div>\", iconSize: [16, 16], iconAnchor: [8, 8] }) }).addTo(m);\n});\n</script>",
    "tokens": {
@@ -220,6 +391,25 @@
    "slug": "glencoe-electrician",
    "title": "Electrician in Glencoe, IL | Peak Property Electric",
    "desc": "Looking for an electrician in Glencoe, IL? Peak Property Electric is family-owned, licensed, and 5.0-star rated. Free estimates — call (773) 987-7677.",
+   "town": "Glencoe",
+   "faqs": [
+    {
+     "q": "Do I need a permit for electrical work in Glencoe?",
+     "a": "For most substantial work — panel changes, service upgrades, rewiring, generator installs — yes, the Village of Glencoe requires a permit and inspection. We handle the paperwork and scheduling as part of the job, so you don't have to chase it down."
+    },
+    {
+     "q": "My Glencoe home was built in the 1920s. Does it need a full rewire?",
+     "a": "Not necessarily. Some older homes were rewired well during past renovations; others still have original cloth-insulated circuits in the walls. We do a free panel-and-wiring once-over on every service call, so we can tell you honestly what's there and whether it needs attention — often it's a partial rewire, not the whole house."
+    },
+    {
+     "q": "How quickly can you get to Glencoe?",
+     "a": "Our shop is in Skokie, a straight run up the Edens corridor, so Glencoe is squarely inside our everyday service area — not the far edge of it. We answer emergency calls 24/7 at (773) 987-7677."
+    },
+    {
+     "q": "Can you put a standby generator on a heavily wooded or ravine-side lot?",
+     "a": "Yes. Siting is the main challenge on Glencoe lots — clearances, gas supply, and drainage all matter. We handle placement, the transfer switch, and coordination with your gas contractor, then maintain the unit afterward."
+    }
+   ],
    "extraHead": "<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\">",
    "extraBody": "<script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n<script>\ndocument.querySelectorAll('.area-map[data-lat]').forEach(function (el) {\n  var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);\n  var m = L.map(el, { center: [lat, lng], zoom: 13, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, attributionControl: false });\n  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(m);\n  L.marker([lat, lng], { icon: L.divIcon({ className: '', html: \"<div style='width:16px;height:16px;background:#111;border:3px solid #E8A020;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.4)'></div>\", iconSize: [16, 16], iconAnchor: [8, 8] }) }).addTo(m);\n});\n</script>",
    "tokens": {
@@ -244,6 +434,25 @@
    "slug": "northfield-electrician",
    "title": "Electrician in Northfield, IL | Peak Property Electric",
    "desc": "Looking for an electrician in Northfield, IL? Family-owned, licensed pros for panel upgrades, lighting & repairs — big or small jobs. Call (773) 987-7677.",
+   "town": "Northfield",
+   "faqs": [
+    {
+     "q": "Do you take small jobs in Northfield, or only big projects?",
+     "a": "Small jobs are welcome — genuinely. A single dead outlet, one new switch, a light that flickers: we'll come out for it. Being based in Skokie, a quick trip up the Edens to Northfield is easy for us, so we never treat a small call like it's not worth the drive."
+    },
+    {
+     "q": "My Northfield home still has its original panel from the 1960s. Should I replace it?",
+     "a": "Not automatically — but it should be looked at. If it's a Federal Pacific panel or a fuse box, we'd recommend replacement; those are known safety issues and many insurers flag them. Every service call includes a free panel-and-wiring once-over, so you'll get an honest answer either way. If an upgrade makes sense, we handle everything from a standard 100 or 200-amp swap up to 400-amp service."
+    },
+    {
+     "q": "How fast can you get to Northfield?",
+     "a": "Quickly — our shop in Skokie is a straight shot up the Edens, so Northfield is one of the easier towns for us to reach. For emergencies, we answer (773) 987-7677 around the clock, 24/7."
+    },
+    {
+     "q": "Can you handle the lighting for a kitchen remodel in Northfield?",
+     "a": "Yes — remodel lighting is one of our most common Northfield jobs. We do recessed LED layouts, under-cabinet lighting, pendants, and dimmers, plus the added circuits a modern kitchen needs. Estimates are free, and we're happy to coordinate with your contractor."
+    }
+   ],
    "extraHead": "<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\">",
    "extraBody": "<script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n<script>\ndocument.querySelectorAll('.area-map[data-lat]').forEach(function (el) {\n  var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);\n  var m = L.map(el, { center: [lat, lng], zoom: 13, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, attributionControl: false });\n  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(m);\n  L.marker([lat, lng], { icon: L.divIcon({ className: '', html: \"<div style='width:16px;height:16px;background:#111;border:3px solid #E8A020;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.4)'></div>\", iconSize: [16, 16], iconAnchor: [8, 8] }) }).addTo(m);\n});\n</script>",
    "tokens": {
@@ -268,6 +477,25 @@
    "slug": "riverwoods-electrician",
    "title": "Electrician in Riverwoods, IL | Peak Property Electric",
    "desc": "Looking for an electrician in Riverwoods? Peak Property Electric is family-owned, licensed & 5.0-star rated. Free estimates — call (773) 987-7677.",
+   "town": "Riverwoods",
+   "faqs": [
+    {
+     "q": "Do you handle Village of Riverwoods permits for generator installations?",
+     "a": "Yes. We pull the permit, plan the placement to satisfy setback and code requirements — no small thing on a wooded lot — and coordinate the inspection. You sign once at the start and once when you're happy with the finished work."
+    },
+    {
+     "q": "My house is on a sump pump (or a well). What actually keeps it running in an outage?",
+     "a": "A standby generator with an automatic transfer switch is the real answer — it picks up your sump, well pump, refrigeration, and heat within seconds, whether you're home or not. We size the unit to your actual loads, not a one-size guess, and estimates are free."
+    },
+    {
+     "q": "How quickly can you get to Riverwoods for an emergency?",
+     "a": "We answer 24/7 at (773) 987-7677 and dispatch from our Skokie shop, which is a direct run up the Edens. On storm nights we triage — no heat, active water, or a burning smell goes to the front of the line."
+    },
+    {
+     "q": "We have an older panel — maybe Federal Pacific. Is that urgent?",
+     "a": "It's worth taking seriously. Federal Pacific breakers have a documented history of failing to trip, and we replace a lot of them in homes of Riverwoods' era. We'll give you an honest read during the free panel-and-wiring once-over that comes with any service call, and we handle upgrades up to 400 amps."
+    }
+   ],
    "extraHead": "<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\">",
    "extraBody": "<script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n<script>\ndocument.querySelectorAll('.area-map[data-lat]').forEach(function (el) {\n  var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);\n  var m = L.map(el, { center: [lat, lng], zoom: 13, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, attributionControl: false });\n  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(m);\n  L.marker([lat, lng], { icon: L.divIcon({ className: '', html: \"<div style='width:16px;height:16px;background:#111;border:3px solid #E8A020;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.4)'></div>\", iconSize: [16, 16], iconAnchor: [8, 8] }) }).addTo(m);\n});\n</script>",
    "tokens": {
@@ -292,6 +520,25 @@
    "slug": "lincolnwood-electrician",
    "title": "Electrician in Lincolnwood, IL | Peak Property Electric",
    "desc": "Looking for an electrician in Lincolnwood, IL? Family-owned, licensed, minutes away in Skokie. Panels, outlets, lighting, 24/7. Call (773) 987-7677.",
+   "town": "Lincolnwood",
+   "faqs": [
+    {
+     "q": "How fast can you get to Lincolnwood?",
+     "a": "Fast — our shop is in Skokie, right on Lincolnwood's border, so this is the closest town we serve outside our own. For emergencies we answer 24/7 at (773) 987-7677, and for scheduled work we can usually get to you quickly because there's essentially no drive involved."
+    },
+    {
+     "q": "My Lincolnwood house still has its original 100-amp panel. Do I really need an upgrade?",
+     "a": "Not automatically — it depends on how you use the house. If you're adding central air, an EV charger, or finishing a basement, 100 amps usually isn't enough. If your panel is a Federal Pacific or a fuse box, we'd recommend replacing it regardless of size. We'll give you an honest read either way, and the panel check is free with any service call."
+    },
+    {
+     "q": "Can you set up my house for a big holiday light display?",
+     "a": "Yes — this is a genuinely popular request in Lincolnwood, especially around the Towers. We install dedicated exterior circuits, weather-resistant GFCI outlets where you actually need them, and switches or smart controls so the whole display runs safely without extension cords snaking through windows."
+    },
+    {
+     "q": "Do I need a permit for electrical work in Lincolnwood?",
+     "a": "Panel replacements, service upgrades, and new circuits generally require a permit from the Village of Lincolnwood, and the work has to be done by a licensed electrician. We're licensed and insured (IL #SE8133) and we handle the permit paperwork as part of the job, so you don't have to deal with the village yourself."
+    }
+   ],
    "extraHead": "<link rel=\"stylesheet\" href=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.css\">",
    "extraBody": "<script src=\"https://unpkg.com/leaflet@1.9.4/dist/leaflet.js\"></script>\n<script>\ndocument.querySelectorAll('.area-map[data-lat]').forEach(function (el) {\n  var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);\n  var m = L.map(el, { center: [lat, lng], zoom: 13, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, attributionControl: false });\n  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(m);\n  L.marker([lat, lng], { icon: L.divIcon({ className: '', html: \"<div style='width:16px;height:16px;background:#111;border:3px solid #E8A020;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.4)'></div>\", iconSize: [16, 16], iconAnchor: [8, 8] }) }).addTo(m);\n});\n</script>",
    "tokens": {

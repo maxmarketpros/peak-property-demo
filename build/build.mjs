@@ -58,16 +58,59 @@ function galleryCards() {
         </div>`).join('\n');
 }
 
+// ---------- structured data ----------
+const TOWNS = ['Skokie', 'Evanston', 'Lincolnwood', 'Wilmette', 'Glenview', 'Northbrook', 'Winnetka', 'Kenilworth', 'Glencoe', 'Northfield', 'Deerfield', 'Riverwoods', 'Highland Park'];
+const BUSINESS_ID = `${site.domain}/#business`;
+
+const businessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Electrician',
+  '@id': BUSINESS_ID,
+  name: 'Peak Property Electric LLC',
+  url: `${site.domain}/`,
+  telephone: '+17739877677',
+  email: site.email,
+  description: `Family-owned electrician serving Skokie, Cook County, and the Chicago North Shore. Illinois License ${site.license}. Panel upgrades, EV chargers, lighting, generators, and 24/7 emergency service.`,
+  slogan: site.tagline,
+  image: [`${site.domain}/photos/brand/red-van-2.jpg`, `${site.domain}/photos/work/crew-on-the-job.jpg`],
+  address: { '@type': 'PostalAddress', addressLocality: 'Skokie', addressRegion: 'IL', addressCountry: 'US' },
+  areaServed: TOWNS.map(t => ({ '@type': 'City', name: `${t}, IL` })),
+  openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], opens: '00:00', closes: '23:59' },
+  sameAs: [site.googleProfile],
+};
+
+const stripTags = s => s.replace(/<[^>]+>/g, '');
+const faqSchema = faqs => ({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(f => ({ '@type': 'Question', name: stripTags(f.q), acceptedAnswer: { '@type': 'Answer', text: stripTags(f.a) } })),
+});
+const breadcrumbSchema = crumbs => ({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: crumbs.map(([name, url], i) => ({ '@type': 'ListItem', position: i + 1, name, item: `${site.domain}${url}` })),
+});
+const jsonld = objs => objs.map(o => `<script type="application/ld+json">${JSON.stringify(o)}</script>`).join('\n');
+
 // ---------- page assembly ----------
 const layout = readFileSync(T('layout.html'), 'utf8');
+const sitemapPaths = [];
 
 function renderPage({ out, title, desc, content, extraHead = '', extraBody = '', schema = '' }) {
   const path = '/' + out.replace(/\\/g, '/');
+  const canonicalPath = path === '/index.html' ? '/' : path;
+  sitemapPaths.push(canonicalPath);
+  const og = site.domain ? `
+<meta property="og:type" content="website">
+<meta property="og:title" content="${title}">
+<meta property="og:description" content="${desc}">
+<meta property="og:url" content="${site.domain}${canonicalPath}">
+<meta property="og:image" content="${site.domain}/photos/brand/red-van-2.jpg">` : '';
   const tokens = {
     ...globalTokens,
     TITLE: title,
     META_DESC: desc,
-    CANONICAL: site.domain ? `\n<link rel="canonical" href="${site.domain}${path === '/index.html' ? '/' : path}">` : '',
+    CANONICAL: (site.domain ? `\n<link rel="canonical" href="${site.domain}${canonicalPath}">` : '') + og,
     SCHEMA_JSONLD: schema,
     EXTRA_HEAD: extraHead,
     EXTRA_BODY: extraBody,
@@ -93,7 +136,7 @@ for (const page of pages) {
     content: readFileSync(C(page.content), 'utf8'),
     extraHead: page.extraHead || '',
     extraBody: page.extraBody || '',
-    schema: page.schema || '',
+    schema: page.out === 'index.html' ? jsonld([businessSchema]) : jsonld([breadcrumbSchema([['Home', '/'], [page.title.split(/[—|–]/)[0].trim(), '/' + page.out]])]),
   });
 }
 
@@ -107,7 +150,11 @@ if (existsSync(D('services.json')) && existsSync(T('service-page.html'))) {
       title: svc.title,
       desc: svc.desc,
       content: substitute(tpl, { ...globalTokens, ...svc.tokens }),
-      schema: svc.schema || '',
+      schema: jsonld([
+        { '@context': 'https://schema.org', '@type': 'Service', serviceType: svc.name, provider: { '@id': BUSINESS_ID }, areaServed: (svc.areas || TOWNS).map(t => ({ '@type': 'City', name: `${t}, IL` })), url: `${site.domain}/services/${svc.slug}.html` },
+        breadcrumbSchema([['Home', '/'], ['Services', '/services.html'], [svc.name, `/services/${svc.slug}.html`]]),
+        ...(svc.faqs ? [faqSchema(svc.faqs)] : []),
+      ]),
     });
   }
 }
@@ -122,11 +169,39 @@ if (existsSync(D('areas.json')) && existsSync(T('area-page.html'))) {
       title: area.title,
       desc: area.desc,
       content: substitute(tpl, { ...globalTokens, ...area.tokens }),
-      schema: area.schema || '',
+      schema: jsonld([
+        { '@context': 'https://schema.org', '@type': 'Service', serviceType: 'Electrician', provider: { '@id': BUSINESS_ID }, areaServed: { '@type': 'City', name: `${area.town}, IL` }, url: `${site.domain}/areas/${area.slug}.html` },
+        breadcrumbSchema([['Home', '/'], ['Service Areas', '/areas.html'], [area.town, `/areas/${area.slug}.html`]]),
+        ...(area.faqs ? [faqSchema(area.faqs)] : []),
+      ]),
       extraHead: area.extraHead || '',
       extraBody: area.extraBody || '',
     });
   }
+}
+
+// 404 page (excluded from sitemap)
+if (existsSync(C('404.html'))) {
+  renderPage({
+    out: '404.html',
+    title: 'Page Not Found | Peak Property Electric',
+    desc: 'That page could not be found. Browse Peak Property Electric services and service areas, or call (773) 987-7677.',
+    content: readFileSync(C('404.html'), 'utf8'),
+  });
+  sitemapPaths.pop();
+}
+
+// sitemap.xml + robots.txt
+if (site.domain) {
+  const today = new Date().toISOString().slice(0, 10);
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapPaths.map(p => `  <url><loc>${site.domain}${p}</loc><lastmod>${today}</lastmod></url>`).join('\n')}
+</urlset>
+`;
+  writeFileSync(join(ROOT, 'sitemap.xml'), sitemap);
+  writeFileSync(join(ROOT, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /build/\n\nSitemap: ${site.domain}/sitemap.xml\n`);
+  console.log(`wrote sitemap.xml (${sitemapPaths.length} urls) + robots.txt`);
 }
 
 console.log('build complete');
