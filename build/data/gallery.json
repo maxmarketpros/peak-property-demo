@@ -1,0 +1,202 @@
+[
+ {
+  "src": "/photos/work/copper-pendant-kitchen.jpg",
+  "label": "Copper Pendant Lighting",
+  "cat": "Kitchen Install",
+  "alt": "Copper pendant lights over a kitchen island installed by Peak Property Electric",
+  "w": 1200,
+  "h": 835
+ },
+ {
+  "src": "/photos/work/multi-unit-commercial.jpg",
+  "label": "Multi-Unit Commercial Building",
+  "cat": "Commercial",
+  "alt": "Multi-unit commercial building electrical project",
+  "w": 960,
+  "h": 720
+ },
+ {
+  "src": "/photos/work/commercial-warehouse-lighting.jpg",
+  "label": "Commercial Warehouse Lighting",
+  "cat": "Commercial",
+  "alt": "High-bay LED lighting installed across a commercial warehouse",
+  "w": 1200,
+  "h": 900
+ },
+ {
+  "src": "/photos/work/commercial-signage-lighting.jpg",
+  "label": "Commercial Signage & Lighting",
+  "cat": "Commercial",
+  "alt": "Storefront signage and exterior lighting for a commercial client",
+  "w": 1200,
+  "h": 900
+ },
+ {
+  "src": "/photos/work/kitchen-led-accent-lighting.jpg",
+  "label": "Kitchen LED & Accent Lighting",
+  "cat": "Kitchen Install",
+  "alt": "Kitchen with LED under-cabinet and accent lighting",
+  "w": 1200,
+  "h": 900
+ },
+ {
+  "src": "/photos/work/recessed-lighting.jpg",
+  "label": "Recessed Lighting",
+  "cat": "Residential",
+  "alt": "Recessed lighting installed in a living space",
+  "w": 1200,
+  "h": 900
+ },
+ {
+  "src": "/photos/work/pendant-recessed-kitchen.jpg",
+  "label": "Pendant & Recessed Lighting",
+  "cat": "Kitchen Install",
+  "alt": "Pendant and recessed lighting in a remodeled white kitchen",
+  "w": 600,
+  "h": 354
+ },
+ {
+  "src": "/photos/work/kitchen-living-room.jpg",
+  "label": "Kitchen & Living Room",
+  "cat": "Kitchen Install",
+  "alt": "Open kitchen and living room with pendant lighting",
+  "w": 600,
+  "h": 398
+ },
+ {
+  "src": "/photos/work/new-construction-plans.jpg",
+  "label": "New Construction Wiring",
+  "cat": "New Construction",
+  "alt": "Electrical plans laid out on site during a new construction wiring job",
+  "w": 900,
+  "h": 1200
+ },
+ {
+  "src": "/photos/work/new-construction-rough-in.jpg",
+  "label": "New Construction Rough-In",
+  "cat": "New Construction",
+  "alt": "Rough-in electrical work in a new construction home",
+  "w": 1200,
+  "h": 900
+ },
+ {
+  "src": "/photos/work/new-construction-wiring.jpg",
+  "label": "New Construction Wiring",
+  "cat": "New Construction",
+  "alt": "New construction wiring through framed walls",
+  "w": 1200,
+  "h": 900
+ },
+ {
+  "src": "/photos/work/rough-in-conduit.jpg",
+  "label": "Rough-In & Conduit Work",
+  "cat": "New Construction",
+  "alt": "Conduit and rough-in wiring in a framed structure",
+  "w": 1200,
+  "h": 900
+ },
+ {
+  "src": "/photos/work/electrician-at-work.jpg",
+  "label": "Electrician at Work",
+  "cat": "Residential",
+  "alt": "Peak Property Electric electrician working from plans on a job site",
+  "w": 1200,
+  "h": 900
+ },
+ {
+  "src": "/photos/work/crew-on-the-job.jpg",
+  "label": "Peak Property Electric Team",
+  "cat": "Residential",
+  "alt": "Peak Property Electric crew in branded shirts working on a job site",
+  "w": 728,
+  "h": 1200
+ },
+ {
+  "src": "/photos/work/tesla-ev-charger-brick.jpg",
+  "label": "Tesla EV Charger Installation",
+  "cat": "EV Charger",
+  "alt": "Tesla wall charger installed on a brick wall",
+  "w": 508,
+  "h": 600
+ },
+ {
+  "src": "/photos/work/open-concept-kitchen.jpg",
+  "label": "Open-Concept Kitchen Remodel",
+  "cat": "Kitchen Install",
+  "alt": "Open-concept kitchen remodel with full electrical work",
+  "w": 1179,
+  "h": 696
+ },
+ {
+  "src": "/photos/work/kitchen-living-pendants.jpg",
+  "label": "Kitchen & Living Pendants",
+  "cat": "Kitchen Install",
+  "alt": "Kitchen island pendants in an open living space",
+  "w": 1179,
+  "h": 783
+ },
+ {
+  "src": "/photos/work/modern-bath-lighting.jpg",
+  "label": "Modern Bath Lighting",
+  "cat": "Residential",
+  "alt": "Modern bathroom lighting installation",
+  "w": 1179,
+  "h": 768
+ },
+ {
+  "src": "/photos/work/spa-style-bathroom.jpg",
+  "label": "Spa-Style Bathroom",
+  "cat": "Residential",
+  "alt": "Spa-style bathroom with layered lighting",
+  "w": 1179,
+  "h": 763
+ },
+ {
+  "src": "/photos/work/primary-bedroom-suite.jpg",
+  "label": "Primary Bedroom Suite",
+  "cat": "Residential",
+  "alt": "Primary bedroom suite lighting",
+  "w": 1179,
+  "h": 743
+ },
+ {
+  "src": "/photos/work/finished-basement-lighting.jpg",
+  "label": "Finished Basement Lighting",
+  "cat": "Residential",
+  "alt": "Finished basement with recessed lighting",
+  "w": 1179,
+  "h": 765
+ },
+ {
+  "src": "/photos/work/commercial-corridor-lighting.jpg",
+  "label": "Commercial Corridor Lighting",
+  "cat": "Commercial",
+  "alt": "Commercial corridor with dramatic pendant accent lighting",
+  "w": 900,
+  "h": 1200
+ },
+ {
+  "src": "/photos/work/commercial-accent-lighting.jpg",
+  "label": "Commercial Accent Lighting",
+  "cat": "Commercial",
+  "alt": "Commercial space with modern accent lighting",
+  "w": 900,
+  "h": 1200
+ },
+ {
+  "src": "/photos/work/panel-service-work.jpg",
+  "label": "Panel Service & Upgrade",
+  "cat": "Residential",
+  "alt": "Peak Property Electric electrician in a branded shirt servicing an electrical panel",
+  "w": 900,
+  "h": 1200
+ },
+ {
+  "src": "/photos/work/overhead-service-install.jpg",
+  "label": "Overhead Service Install",
+  "cat": "Residential",
+  "alt": "Peak Property Electric electrician installing an overhead electrical service",
+  "w": 900,
+  "h": 1200
+ }
+]
