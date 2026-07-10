@@ -3,8 +3,9 @@
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
- --gold:#E8A020;
- --gold-light:#F5B535;
+ --gold:#E8641C; /* burnt-orange primary (Ember theme, client-approved Jul 2026) */
+ --gold-light:#F58A3C;
+ --red:#C4342D;  /* bold red accent — topbar stripe, CTA hovers, safety highlights */
  --dark:#111111;
  --text:#333333;
  --muted:#666666;
@@ -20,7 +21,7 @@ img{max-width:100%;display:block}
 a{text-decoration:none}
 
 /* TOP BAR */
-.topbar{background:var(--dark);color:#ccc;font-size:12px;font-weight:600;text-align:center;padding:9px 20px;letter-spacing:.5px}
+.topbar{background:var(--dark);color:#ccc;font-size:12px;font-weight:600;text-align:center;padding:9px 20px;letter-spacing:.5px;border-bottom:3px solid var(--red)}
 .topbar a{color:var(--gold-light);font-weight:800}
 .topbar .tb-sep{margin:0 10px;color:#555}
 
@@ -32,10 +33,10 @@ nav{background:var(--white);border-bottom:2px solid var(--border);padding:0 60px
 .logo-text span{color:var(--gold);display:block;font-size:13px;font-weight:700;letter-spacing:1px}
 .nav-links{display:flex;align-items:center;gap:4px;list-style:none}
 .nav-links a{font-family:'Montserrat',sans-serif;font-weight:600;font-size:13px;color:var(--text);padding:8px 12px;border-radius:5px;transition:all .2s;text-transform:uppercase;letter-spacing:.5px;display:inline-block}
-.nav-links a:hover{color:var(--gold);background:#fff8ee}
+.nav-links a:hover{color:var(--gold);background:#fdf0e8}
 .nav-phone-link{color:var(--dark)!important;font-weight:800!important;font-size:14px!important}
 .nav-cta-btn{background:var(--gold)!important;color:var(--white)!important;padding:10px 22px!important;border-radius:6px!important;font-weight:700!important}
-.nav-cta-btn:hover{background:#d4911a!important;color:var(--white)!important}
+.nav-cta-btn:hover{background:var(--red)!important;color:var(--white)!important}
 
 /* NAV DROPDOWNS (desktop hover/focus; mobile accordion) */
 .has-drop{display:flex;align-items:center}
@@ -46,8 +47,8 @@ nav{background:var(--white);border-bottom:2px solid var(--border);padding:0 60px
 .drop-col{min-width:172px}
 .drop-col-wide{min-width:210px}
 .drop-head{display:block;font-family:'Montserrat',sans-serif;font-weight:800;font-size:11px;text-transform:uppercase;letter-spacing:2px;color:var(--muted);margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--border)}
-.drop-col-safety .drop-head{color:var(--gold)}
-.drop-col-safety{border-left:3px solid var(--gold);padding-left:18px;margin-left:-18px}
+.drop-col-safety .drop-head{color:var(--red)}
+.drop-col-safety{border-left:3px solid var(--red);padding-left:18px;margin-left:-18px}
 .drop-panel a{display:block;padding:6px 0!important;font-size:12px!important;text-transform:none!important;letter-spacing:.2px!important;color:var(--text);border-radius:4px;white-space:nowrap}
 .drop-panel a:hover{background:none;color:var(--gold)}
 .drop-all{font-weight:700!important;color:var(--gold)!important;margin-top:6px}
@@ -55,7 +56,7 @@ nav{background:var(--white);border-bottom:2px solid var(--border);padding:0 60px
 /* HERO */
 .hero{min-height:88vh;display:grid;grid-template-columns:1fr 480px;align-items:stretch;background:linear-gradient(102deg,rgba(17,19,28,.93) 0%,rgba(17,19,28,.87) 52%,rgba(17,19,28,.8) 100%),#1e2030 url("/photos/work/copper-pendant-kitchen.jpg") center/cover no-repeat}
 .hero-left{padding:80px 60px 80px 80px;display:flex;flex-direction:column;justify-content:center;position:relative}
-.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(232,160,32,.15);border:1px solid rgba(232,160,32,.35);color:var(--gold-light);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;padding:6px 14px;border-radius:20px;margin-bottom:24px;width:fit-content}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(232,100,28,.15);border:1px solid var(--red);color:var(--gold-light);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;padding:6px 14px;border-radius:20px;margin-bottom:24px;width:fit-content}
 .hero h1{font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(40px,4.6vw,64px);line-height:1.05;color:var(--white);margin-bottom:10px;text-transform:uppercase}
 .hero h1 em{color:var(--gold);font-style:normal;display:block}
 .hero-sub{font-size:17px;line-height:1.7;color:#aaa;max-width:520px;margin-bottom:36px}
@@ -63,8 +64,8 @@ nav{background:var(--white);border-bottom:2px solid var(--border);padding:0 60px
 .hero-pill{display:flex;align-items:center;gap:7px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:#ddd;font-size:13px;font-weight:600;padding:8px 16px;border-radius:4px}
 .hero-pill .ck{color:var(--gold)}
 .hero-btns{display:flex;gap:14px;flex-wrap:wrap}
-.btn-gold{background:var(--gold);color:var(--dark);padding:16px 32px;border-radius:6px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:1px;display:inline-flex;align-items:center;gap:8px;transition:all .2s;border:none;cursor:pointer}
-.btn-gold:hover{background:var(--gold-light);transform:translateY(-1px);box-shadow:0 6px 20px rgba(232,160,32,.35)}
+.btn-gold{background:var(--gold);color:var(--white);padding:16px 32px;border-radius:6px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:1px;display:inline-flex;align-items:center;gap:8px;transition:all .2s;border:none;cursor:pointer}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-1px);box-shadow:0 6px 20px rgba(232,100,28,.35)}
 .btn-wht{background:transparent;color:var(--white);padding:15px 28px;border-radius:6px;border:2px solid rgba(255,255,255,.25);font-family:'Montserrat',sans-serif;font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:8px;transition:all .2s}
 .btn-wht:hover{border-color:var(--gold);color:var(--gold)}
 .btn-outline-dark{background:transparent;color:var(--dark);padding:15px 28px;border-radius:6px;border:2px solid var(--border);font-family:'Montserrat',sans-serif;font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:8px;transition:all .2s;cursor:pointer}
@@ -115,7 +116,7 @@ nav{background:var(--white);border-bottom:2px solid var(--border);padding:0 60px
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border)}
 .svc-card{background:var(--white);padding:0;border:none;transition:all .2s;position:relative;overflow:hidden;display:block;color:inherit}
 .svc-card::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s}
-.svc-card:hover{background:#fffbf2;box-shadow:0 4px 24px rgba(0,0,0,.06)}
+.svc-card:hover{background:#fdf3ec;box-shadow:0 4px 24px rgba(0,0,0,.06)}
 .svc-card:hover::after{transform:scaleX(1)}
 .svc-card-img{width:100%;aspect-ratio:1;overflow:hidden;background:var(--light)}
 .svc-card-img img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .45s ease}
@@ -130,14 +131,14 @@ nav{background:var(--white);border-bottom:2px solid var(--border);padding:0 60px
 .svc-cat-head{display:flex;align-items:center;gap:14px;margin-bottom:24px}
 .svc-cat-head h2{font-family:'Montserrat',sans-serif;font-weight:900;font-size:24px;color:var(--dark);text-transform:uppercase}
 .svc-cat-head .rule{flex:1;height:2px;background:var(--border)}
-.svc-cat.safety-cat{background:#fffbf2;border:2px solid var(--gold);border-radius:12px;padding:32px}
-.svc-cat.safety-cat .svc-cat-head h2{color:var(--gold)}
+.svc-cat.safety-cat{background:#fdf3ec;border:2px solid var(--red);border-radius:12px;padding:32px}
+.svc-cat.safety-cat .svc-cat-head h2{color:var(--red)}
 
 /* WHY US */
 .why-us{background:var(--light)}
 .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:52px;background:var(--border)}
 .why-item{background:var(--white);padding:36px 32px;display:block;transition:background .2s}
-.why-item:hover{background:#fffbf2}
+.why-item:hover{background:#fdf3ec}
 .why-title{font-family:'Montserrat',sans-serif;font-weight:800;font-size:15px;color:var(--dark);text-transform:uppercase;margin-bottom:8px;letter-spacing:.3px}
 .why-desc{font-size:13px;line-height:1.7;color:var(--muted)}
 .why-split{display:grid;grid-template-columns:.82fr 1.18fr;gap:2px;margin-top:52px;background:var(--border)}
@@ -215,9 +216,9 @@ nav{background:var(--white);border-bottom:2px solid var(--border);padding:0 60px
 .btn-dark-solid:hover{background:#333}
 
 /* SAFETY CALLOUT BOX (service pages) */
-.safety-callout{background:#fffbf2;border:2px solid var(--gold);border-radius:10px;padding:28px 30px;margin:36px 0}
+.safety-callout{background:#fdf3ec;border:2px solid var(--red);border-radius:10px;padding:28px 30px;margin:36px 0}
 .safety-callout h3{font-family:'Montserrat',sans-serif;font-weight:800;font-size:16px;color:var(--dark);text-transform:uppercase;margin-bottom:10px}
-.safety-callout h3 .bolt{color:var(--gold)}
+.safety-callout h3 .bolt{color:var(--red)}
 .safety-callout p{font-size:14px;line-height:1.75;color:var(--text)}
 .safety-callout a{color:var(--gold);font-weight:700}
 
@@ -245,7 +246,7 @@ nav{background:var(--white);border-bottom:2px solid var(--border);padding:0 60px
 .team-photo{position:relative;overflow:hidden;min-height:540px;background:#e9e9ee}
 .team-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
 .team-photo::after{content:'';position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--gold)}
-.team-badge{position:absolute;left:22px;bottom:22px;z-index:2;background:rgba(17,19,28,.78);border:1px solid rgba(232,160,32,.6);color:#fff;padding:9px 15px;border-radius:7px;font-family:'Montserrat',sans-serif;font-weight:700;font-size:12px;letter-spacing:.5px}
+.team-badge{position:absolute;left:22px;bottom:22px;z-index:2;background:rgba(17,19,28,.78);border:1px solid rgba(232,100,28,.6);color:#fff;padding:9px 15px;border-radius:7px;font-family:'Montserrat',sans-serif;font-weight:700;font-size:12px;letter-spacing:.5px}
 .team-content{padding:60px 64px;display:flex;flex-direction:column;justify-content:center;background:var(--white)}
 .team-eyebrow{font-family:'Montserrat',sans-serif;font-weight:800;font-size:11px;text-transform:uppercase;letter-spacing:3px;color:var(--gold);margin-bottom:14px}
 .team-content h2{font-family:'Montserrat',sans-serif;font-weight:900;font-size:clamp(28px,3vw,42px);color:var(--dark);text-transform:uppercase;line-height:1.08;margin-bottom:18px}
@@ -311,7 +312,7 @@ footer{background:var(--dark);padding:64px 80px 32px}
 .footer-bottom p{font-size:12px;color:#555}
 
 /* STICKY CTA */
-.sticky-cta{position:fixed;bottom:28px;right:28px;z-index:300;background:var(--gold);color:var(--dark);width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 4px 20px rgba(232,160,32,.45);text-decoration:none;transition:transform .2s}
+.sticky-cta{position:fixed;bottom:28px;right:28px;z-index:300;background:var(--gold);color:var(--white);width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 4px 20px rgba(232,100,28,.45);text-decoration:none;transition:transform .2s}
 .sticky-cta:hover{transform:scale(1.1)}
 
 /* MOBILE NAV TOGGLE */

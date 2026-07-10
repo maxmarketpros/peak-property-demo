@@ -50,7 +50,7 @@ document.querySelectorAll('.area-map[data-lat]').forEach(function (el) {
   var lat = parseFloat(el.dataset.lat), lng = parseFloat(el.dataset.lng);
   var m = L.map(el, { center: [lat, lng], zoom: 13, zoomControl: false, dragging: false, scrollWheelZoom: false, doubleClickZoom: false, boxZoom: false, keyboard: false, attributionControl: false });
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(m);
-  L.marker([lat, lng], { icon: L.divIcon({ className: '', html: "<div style='width:16px;height:16px;background:#111;border:3px solid #E8A020;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.4)'></div>", iconSize: [16, 16], iconAnchor: [8, 8] }) }).addTo(m);
+  L.marker([lat, lng], { icon: L.divIcon({ className: '', html: "<div style='width:16px;height:16px;background:#111;border:3px solid #E8641C;border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.4)'></div>", iconSize: [16, 16], iconAnchor: [8, 8] }) }).addTo(m);
 });
 </script>`;
 
