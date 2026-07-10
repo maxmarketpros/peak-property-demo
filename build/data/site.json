@@ -21,6 +21,7 @@
     { "label": "Wilmette, IL", "href": "/areas/wilmette-electrician" },
     { "label": "Glenview, IL", "href": "/areas/glenview-electrician" },
     { "label": "Northbrook, IL", "href": "/areas/northbrook-electrician" },
+    { "label": "Chicago (Select Areas)", "href": "/areas#chicago" },
     { "label": "All Service Areas →", "href": "/areas" }
   ]
 }

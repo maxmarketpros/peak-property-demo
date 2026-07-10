@@ -58,7 +58,9 @@ function galleryCards() {
 }
 
 // ---------- structured data ----------
-const TOWNS = ['Skokie', 'Evanston', 'Lincolnwood', 'Wilmette', 'Glenview', 'Northbrook', 'Winnetka', 'Kenilworth', 'Glencoe', 'Northfield', 'Deerfield', 'Riverwoods', 'Highland Park'];
+const TOWNS = ['Skokie', 'Evanston', 'Lincolnwood', 'Wilmette', 'Glenview', 'Northbrook', 'Winnetka', 'Kenilworth', 'Glencoe', 'Northfield', 'Deerfield', 'Riverwoods', 'Highland Park', 'Chicago'];
+// Chicago is served by zip code, not city-wide — these feed the business schema's areaServed.
+const CHICAGO_ZIPS = ['60601', '60605', '60610', '60611', '60614', '60622', '60647', '60654', '60657'];
 const BUSINESS_ID = `${site.domain}/#business`;
 
 const businessSchema = {
@@ -73,7 +75,10 @@ const businessSchema = {
   slogan: site.tagline,
   image: [`${site.domain}/photos/brand/red-van-2.jpg`, `${site.domain}/photos/work/crew-on-the-job.jpg`],
   address: { '@type': 'PostalAddress', addressLocality: 'Skokie', addressRegion: 'IL', addressCountry: 'US' },
-  areaServed: TOWNS.map(t => ({ '@type': 'City', name: `${t}, IL` })),
+  areaServed: [
+    ...TOWNS.map(t => ({ '@type': 'City', name: `${t}, IL` })),
+    ...CHICAGO_ZIPS.map(zip => ({ '@type': 'Place', address: { '@type': 'PostalAddress', postalCode: zip, addressLocality: 'Chicago', addressRegion: 'IL' } })),
+  ],
   openingHoursSpecification: { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], opens: '00:00', closes: '23:59' },
   sameAs: [site.googleProfile],
 };
